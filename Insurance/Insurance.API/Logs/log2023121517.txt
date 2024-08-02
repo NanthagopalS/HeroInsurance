@@ -1,0 +1,178 @@
+2023-12-15 17:52:35.427 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-15 17:52:35.734 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-15 17:52:35.735 +05:30 [INF] Hosting environment: Development
+2023-12-15 17:52:35.735 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\
+2023-12-15 17:52:35.781 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger - -
+2023-12-15 17:52:36.153 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/index.html - -
+2023-12-15 17:52:36.162 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger - - - 301 - - 385.1967ms
+2023-12-15 17:52:36.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/index.html - - - 200 - text/html;charset=utf-8 285.9129ms
+2023-12-15 17:52:36.442 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - -
+2023-12-15 17:52:36.447 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - -
+2023-12-15 17:52:36.450 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - -
+2023-12-15 17:52:36.499 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-12-15 17:52:36.499 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-12-15 17:52:36.507 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-12-15 17:52:36.508 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui.css - - - 200 144929 text/css 60.5306ms
+2023-12-15 17:52:36.513 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 62.9714ms
+2023-12-15 17:52:36.514 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/_framework/aspnetcore-browser-refresh.js - -
+2023-12-15 17:52:36.522 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/_vs/browserLink - -
+2023-12-15 17:52:36.523 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 5.7783ms
+2023-12-15 17:52:36.535 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 93.3234ms
+2023-12-15 17:52:36.612 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 90.0581ms
+2023-12-15 17:52:36.804 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - -
+2023-12-15 17:52:36.825 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/favicon-32x32.png - -
+2023-12-15 17:52:36.825 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-12-15 17:52:36.825 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/favicon-32x32.png - - - 200 628 image/png 0.8367ms
+2023-12-15 17:52:37.544 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 739.6960ms
+2023-12-15 17:53:20.770 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44347/api/v1/Quote/CreateProposal/E656D5D1-5239-4E48-9048-228C67AE3AC3/65982C6F-660A-4162-830C-1B98386CD128/88a807b3-90e4-484b-b5d2-65059a8e1a91/false - 0
+2023-12-15 17:53:20.801 +05:30 [INF] CORS policy execution failed.
+2023-12-15 17:53:20.802 +05:30 [INF] Request origin https://localhost:44347 does not have permission to access the resource.
+2023-12-15 17:53:21.105 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-15 17:53:21.154 +05:30 [INF] Route matched with {action = "CreateProposal", controller = "Quote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Insurance.Domain.GoDigit.QuoteResponseModel]] CreateProposal(System.String, System.String, System.String, Boolean, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.QuoteController (Insurance.API).
+2023-12-15 17:55:21.645 +05:30 [ERR] IFFCO Proposal Cannot implicitly convert type 'int' to 'string'
+2023-12-15 17:55:21.770 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ThirdPartyUtilities.Models.ResultModel'.
+2023-12-15 17:55:21.797 +05:30 [INF] Response captured: {"statusCode":"400","message":"Failed","data":{"title":"BadRequest","status":400,"detail":"Create Proposal Failed "}}
+2023-12-15 17:55:22.279 +05:30 [INF] Executed action Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API) in 121120.7509ms
+2023-12-15 17:55:22.284 +05:30 [INF] Executed endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-15 17:55:22.304 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44347/api/v1/Quote/CreateProposal/E656D5D1-5239-4E48-9048-228C67AE3AC3/65982C6F-660A-4162-830C-1B98386CD128/88a807b3-90e4-484b-b5d2-65059a8e1a91/false - 0 - 400 - application/json;+charset=utf-8 121533.7948ms
+2023-12-15 17:55:24.692 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44347/api/v1/Quote/CreateProposal/E656D5D1-5239-4E48-9048-228C67AE3AC3/65982C6F-660A-4162-830C-1B98386CD128/88a807b3-90e4-484b-b5d2-65059a8e1a91/false - 0
+2023-12-15 17:55:24.693 +05:30 [INF] CORS policy execution failed.
+2023-12-15 17:55:24.693 +05:30 [INF] Request origin https://localhost:44347 does not have permission to access the resource.
+2023-12-15 17:55:24.694 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-15 17:55:24.697 +05:30 [INF] Route matched with {action = "CreateProposal", controller = "Quote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Insurance.Domain.GoDigit.QuoteResponseModel]] CreateProposal(System.String, System.String, System.String, Boolean, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.QuoteController (Insurance.API).
+2023-12-15 17:56:22.053 +05:30 [ERR] IFFCO Proposal Cannot implicitly convert type 'int' to 'string'
+2023-12-15 17:56:22.055 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ThirdPartyUtilities.Models.ResultModel'.
+2023-12-15 17:56:22.065 +05:30 [INF] Response captured: {"statusCode":"400","message":"Failed","data":{"title":"BadRequest","status":400,"detail":"Create Proposal Failed "}}
+2023-12-15 17:56:22.166 +05:30 [INF] Executed action Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API) in 57469.0988ms
+2023-12-15 17:56:22.166 +05:30 [INF] Executed endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-15 17:56:22.167 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44347/api/v1/Quote/CreateProposal/E656D5D1-5239-4E48-9048-228C67AE3AC3/65982C6F-660A-4162-830C-1B98386CD128/88a807b3-90e4-484b-b5d2-65059a8e1a91/false - 0 - 400 - application/json;+charset=utf-8 57475.0090ms
+2023-12-15 17:56:23.055 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/index.html - -
+2023-12-15 17:56:23.070 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/index.html - - - 200 - text/html;charset=utf-8 15.3120ms
+2023-12-15 17:56:23.087 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/_framework/aspnetcore-browser-refresh.js - -
+2023-12-15 17:56:23.087 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/_vs/browserLink - -
+2023-12-15 17:56:23.088 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 0.9784ms
+2023-12-15 17:56:23.111 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.9417ms
+2023-12-15 17:56:23.244 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - -
+2023-12-15 17:56:23.469 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 225.2309ms
+2023-12-15 17:56:53.268 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44347/api/v1/Quote/CreateProposal/E656D5D1-5239-4E48-9048-228C67AE3AC3/65982C6F-660A-4162-830C-1B98386CD128/88a807b3-90e4-484b-b5d2-65059a8e1a91/false - 0
+2023-12-15 17:56:53.269 +05:30 [INF] CORS policy execution failed.
+2023-12-15 17:56:53.269 +05:30 [INF] Request origin https://localhost:44347 does not have permission to access the resource.
+2023-12-15 17:56:53.271 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-15 17:56:53.276 +05:30 [INF] Route matched with {action = "CreateProposal", controller = "Quote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Insurance.Domain.GoDigit.QuoteResponseModel]] CreateProposal(System.String, System.String, System.String, Boolean, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.QuoteController (Insurance.API).
+2023-12-15 17:57:13.029 +05:30 [INF] Create IFFCO Proposal requestBody <Request>
+  <Policy>
+    <Product>CVI</Product>
+    <CreatedDate>12/15/2023 17:57:12</CreatedDate>
+    <InceptionDate>12/16/2023 00:00:00</InceptionDate>
+    <UniqueQuoteId>HERO71788</UniqueQuoteId>
+    <CorporateClient>N</CorporateClient>
+    <ExpiryDate>12/15/2024 23:59:59</ExpiryDate>
+    <PreviousPolicyEnddate>12/15/2023</PreviousPolicyEnddate>
+    <PreviousPolicyStartdate>12/16/2022</PreviousPolicyStartdate>
+    <PreviousPolicyInsurer>BAJAJ ALLIANZ GENERAL INSURANCE CO. LTD</PreviousPolicyInsurer>
+    <PreviousPolicyNo>JNHBGv873456348</PreviousPolicyNo>
+    <GeneralPage />
+    <OdDiscountLoading>0</OdDiscountLoading>
+    <OdDiscountAmt>0.00</OdDiscountAmt>
+    <OdSumDisLoad>8011.92</OdSumDisLoad>
+    <TpSumDisLoad>16379.00</TpSumDisLoad>
+    <GrossPremium>24390.92</GrossPremium>
+    <ServiceTax>3427</ServiceTax>
+    <NetPremiumPayable>27818.34</NetPremiumPayable>
+    <TotalSumInsured>610083</TotalSumInsured>
+    <ExternalBranch>HERO_INSURANCE</ExternalBranch>
+    <ExternalSubBranch>HERO_INSURANCE</ExternalSubBranch>
+    <ExternalServiceConsumer>ITGIMOT141</ExternalServiceConsumer>
+    <Nominee>Shan</Nominee>
+    <NomineeRelationship>Father</NomineeRelationship>
+    <PartnerType>POS</PartnerType>
+    <POSPanNumber>BRQPN1686R</POSPanNumber>
+    <BreakInofMorethan90days />
+  </Policy>
+  <Coverage>
+    <Code>PA Owner / Driver</Code>
+    <SumInsured>Y</SumInsured>
+    <ODPremium />
+    <TPPremium>330.00</TPPremium>
+  </Coverage>
+  <Coverage>
+    <Code>No Claim Bonus</Code>
+    <SumInsured>25</SumInsured>
+    <ODPremium>-2670.64</ODPremium>
+    <TPPremium />
+  </Coverage>
+  <Coverage>
+    <Code>IDV Basic</Code>
+    <SumInsured>610083</SumInsured>
+    <ODPremium>10682.56</ODPremium>
+    <TPPremium>16049.00</TPPremium>
+  </Coverage>
+  <Vehicle>
+    <Capacity>1</Capacity>
+    <EngineCapacity>1</EngineCapacity>
+    <GrossVehicleWeight />
+    <Make>A1A0383</Make>
+    <RegistrationNumber1>MH</RegistrationNumber1>
+    <RegistrationNumber2>01</RegistrationNumber2>
+    <RegistrationNumber3>PC</RegistrationNumber3>
+    <RegistrationNumber4>4332</RegistrationNumber4>
+    <PolicyType>CP</PolicyType>
+    <ManufacturingYear>2019</ManufacturingYear>
+    <Zone>A</Zone>
+    <RiskOccupationCode />
+    <VehicleBody />
+    <EngineNumber>2ZRY23475645</EngineNumber>
+    <ChassisNumber>MBJ53REH206345856</ChassisNumber>
+    <SeatingCapacity>1</SeatingCapacity>
+    <RegistrationDate>12/01/2019</RegistrationDate>
+    <RTOCity>MAHMUMBAI</RTOCity>
+    <NewVehicleFlag>N</NewVehicleFlag>
+    <Zcover>CO</Zcover>
+    <ValidDrivingLicence>Y</ValidDrivingLicence>
+    <AlternatePACover>N</AlternatePACover>
+  </Vehicle>
+  <Contact>
+    <DOB>10/19/1996</DOB>
+    <PassPort />
+    <PAN />
+    <SiebelContactNumber />
+    <ExternalClientNo>HERO71788</ExternalClientNo>
+    <ItgiClientNumber />
+    <Salutation>MS</Salutation>
+    <FirstName>AKANKSHA</FirstName>
+    <LastName>SHUKLA</LastName>
+    <Sex>F</Sex>
+    <AddressType>P</AddressType>
+    <PinCode>400001</PinCode>
+    <State>MAH</State>
+    <AddressLine1> 1213 test</AddressLine1>
+    <AddressLine2>address</AddressLine2>
+    <FaxNo />
+    <Country>IND</Country>
+    <CountryOrigin>IND</CountryOrigin>
+    <Occupation>STDN</Occupation>
+    <City>MUMBAI</City>
+    <Source />
+    <Nationality>IND</Nationality>
+    <Married>M</Married>
+    <HomePhone />
+    <OfficePhone />
+    <MobilePhone>9842338370</MobilePhone>
+    <Pager />
+    <MailId>nanthagopal.s@mantralabsglobal.com</MailId>
+    <TaxId />
+    <StafFlag />
+    <AddressLine3 />
+    <AddressLine4 />
+    <ItgiKYCReferenceNo>TUSZBNTAHWNHPL</ItgiKYCReferenceNo>
+  </Contact>
+  <VehicleThirdParty>
+    <InterestedPartyName />
+    <Relation />
+  </VehicleThirdParty>
+</Request>
+2023-12-15 17:57:13.613 +05:30 [INF] Executing OkObjectResult, writing value of type 'ThirdPartyUtilities.Models.ResultModel'.
+2023-12-15 17:57:13.655 +05:30 [INF] Response captured: {"statusCode":"200","message":"Success","data":{"insurerName":"IFFCO Tokio General Insurance Co. Ltd.","insurerId":"E656D5D1-5239-4E48-9048-228C67AE3AC3","insurerStatusCode":200,"insurerLogo":"https://preprod.heroinsurance.com/images/insurance/iffco.png","cachlessGarageCount":31,"selfVideoClaim":"6400+ Cashless Garages Network","insurerDescription":"WhatsApp claim intimation","totalPremium":"24391","grossPremium":"27818","selectedIDV":0,"idv":610083,"minIDV":488067,"maxIDV":732100,"ncb":"25","isRecommended":false,"recommendedDescription":null,"policyStartDate":null,"tenure":null,"basicCover":null,"paCovers":null,"addonCover":null,"discount":null,"tax":{"cgst":null,"sgst":null,"igst":null,"utgst":null,"totalTax":"3427","taxType":null},"accessoriesCover":null,"cashlessGarageList":[{"garageId":"EACC2EFE-26BD-4D6B-AF0E-785B83330988","workshopName":"MADHUBAN TOYOTA","fullAddress":"Fortune Classic, C Dhurandhar Road, Off, 15th Rd, Khar West, Mumbai, Maharashtra 400052","city":"MUMBAI","state":"Maharashtra","pincode":"400052","latitude":"19.073745519999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"insurancesales@madhubantoyota.com","mobileNumber":"9833224980","contactPerson":"MADHUBAN TOYOTA"},{"garageId":"ED09F9CB-3CC7-4CDA-A2BB-A0D647DF2712","workshopName":"WASAN TOYOTA","fullAddress":"C/170, TTC Industrial Estate, Village - Pawane Turbhe, Navi Mumbai, Maharashtra 400703","city":"NAVI MUMBAI","state":"Maharashtra","pincode":"400703","latitude":"19.08078802","workLatitudeshopName":null,"productType":"Private Car","emailId":"mu07c_cs@wasantoyotamumbai.com","mobileNumber":"9702914449","contactPerson":"WASAN TOYOTA"},{"garageId":"FB124FD8-CC03-443B-967E-B66B3DDE6135","workshopName":"LAKOZY TOYOTA","fullAddress":"1, Mahal Industrial Estate, 19, Mahakali Caves Rd, Shanti Nagar, Andheri East, Mumbai, Maharashtra 400093","city":"MUMBAI","state":"Maharashtra","pincode":"400093","latitude":"19.117920890000001","workLatitudeshopName":null,"productType":"Private Car","emailId":"mu02c_cs@toyotalakozy.com","mobileNumber":"9870506227","contactPerson":"LAKOZY TOYOTA"},{"garageId":"5688D7ED-C851-47EF-956F-AE3CCA69EAA9","workshopName":"COMPETENT AUTOMOBILES CO LTD","fullAddress":"COMPETENT AUTOMOBILE CO. LTD. B-83 MAYAPURI IND. AREA, PHASE-I, NEW DELHI-110064,","city":"NEW DELHI","state":"Delhi","pincode":"110064","latitude":"28.623612699999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"usjha73@yahoo.co.in","mobileNumber":"9582797775","contactPerson":"U.S. JHA"},{"garageId":"5BEC1920-80D1-44BC-AE2A-C8DB37AB41BE","workshopName":"SHARAYU TOYOTA","fullAddress":"Ashok Nagar Rd, Ashok Nagar, Tathawade, Pimpri-Chinchwad,Pune, Maharashtra 411033","city":"PUNE","state":"Maharashtra","pincode":"411033","latitude":"18.629470810000001","workLatitudeshopName":null,"productType":"Private Car","emailId":"pu03b_insclai@sharayu.in","mobileNumber":"8669628018","contactPerson":"Nikhil"},{"garageId":"5F1DC1E3-80FA-4BBE-B713-7C3FB409EDDE","workshopName":"T R SAWHNEY MOTORS PVT LTD.","fullAddress":"B-19,MAYAPURI INDUTRIAL AREAPHASE-1NEW DELHI-110064","city":"NEW DELHI","state":"Delhi","pincode":"110064","latitude":"28.623612699999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"bodyshopmanager.myp@trsawhneymotors.com","mobileNumber":"9999184697","contactPerson":"MR DALBIR SINGH"},{"garageId":"625E8AD1-A161-4BD6-8DC7-4E13A4CBC23F","workshopName":"MADHUBAN TOYOTA","fullAddress":"CR2 Mall Barister, Barrister Rajni Patel Marg, Nariman Point, Mumbai, Maharashtra 400021","city":"MUMBAI","state":"Maharashtra","pincode":"400021","latitude":"18.926643290000001","workLatitudeshopName":null,"productType":"Private Car","emailId":"insurancesales@madhubantoyota.com","mobileNumber":"9619484486","contactPerson":"MADHUBAN TOYOTA"},{"garageId":"634BBC5C-3974-4339-A76A-606D9DFE270B","workshopName":"WASAN TOYOTA","fullAddress":"No.85&86, Nagar Pune Rd, Industrial Estate, Kedgaon, Ahmednagar, Maharashtra 414005","city":"AHMEDNAGAR","state":"Maharashtra","pincode":"414005","latitude":"19.069020850000001","workLatitudeshopName":null,"productType":"Private Car","emailId":"insurance.ngr@wasantoyota.com","mobileNumber":"8669989376","contactPerson":"WASAN TOYOTA"},{"garageId":"6BFC281A-97FA-4BF3-B6E2-26809FD560BC","workshopName":"T R SAWHNEY MOTORS PVT LTD.","fullAddress":"33 , 34 East Gokulpur,Main Wazirabad RoadDELHI-110094","city":"NEW DELHI","state":"Delhi","pincode":"110094","latitude":"28.713097789999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"recoverybodyshop1@trsawhneymotors.com","mobileNumber":"8860300520","contactPerson":"RAJEEV SHARMA"},{"garageId":"90C72EBA-C0A7-41AC-BEAC-7340EE0170BF","workshopName":"Prem Motors Pvt Ltd","fullAddress":"K804/2,MAHIPALPURVASANT KUNJNEW DELHI","city":"NEW DELHI","state":"Delhi","pincode":"110076","latitude":"28.542380999999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"vk.bsm@premmotors.com","mobileNumber":"7065003755","contactPerson":"MR.NAVNEET SURI"},{"garageId":"ACAF5070-CE1D-4F62-800F-EB7A8C245075","workshopName":"MAGIC AUTO","fullAddress":"PLOT NO-449/450 ind area,patparganj -","city":"NEW DELHI","state":"Delhi","pincode":"110092","latitude":"28.6325246","workLatitudeshopName":null,"productType":"Private Car","emailId":"gm.ppg@magicmaruti.com","mobileNumber":"9818741741","contactPerson":"VIKRAM MEHRA"},{"garageId":"B249FAE1-3FBD-4C5B-B28B-74937446F7D4","workshopName":"MADHUBAN TOYOTA","fullAddress":"16, L.B.S. Marg, Near Phoenix Market City, Kurla West, Mumbai, Maharashtra 400070","city":"MUMBAI","state":"Maharashtra","pincode":"400070","latitude":"19.084790000000002","workLatitudeshopName":null,"productType":"Private Car","emailId":"insurancesales@madhubantoyota.com","mobileNumber":"9833224980","contactPerson":"MADHUBAN TOYOTA"},{"garageId":"B904AC8C-CC9F-4828-8891-7C724F35FD82","workshopName":"Prem Motors Pvt Ltd","fullAddress":"F-85 okhla industrial area, phase-1, new delhi-110020,","city":"NEW DELHI","state":"Delhi","pincode":"110020","latitude":"28.535702520000001","workLatitudeshopName":null,"productType":"Private Car","emailId":"okh.awm@premmotors.com","mobileNumber":"8130093122","contactPerson":"Mr. Riyaz Alam"},{"garageId":"0B40D3C6-B721-42C7-A0D8-09BE43536CF0","workshopName":"MADHUBAN TOYOTA","fullAddress":"Unit No. 2&3, Prathmesh Complex, Raghuvanshi Mills Compound, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013","city":"MUMBAI","state":"Maharashtra","pincode":"400013","latitude":"18.998693289999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"insurancesales@madhubantoyota.com","mobileNumber":"9619484486","contactPerson":"MADHUBAN TOYOTA"},{"garageId":"0FBA69E0-7BD2-4302-8503-475200482B3F","workshopName":"A.M.Automobiles","fullAddress":"189-91,,LAWRENCE ROADDELHI110085","city":"DELHI","state":"Delhi","pincode":"110085","latitude":"28.716715239999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"abhay802@gmail.com","mobileNumber":"9560393833","contactPerson":"ABHAY PRATAP SINGH"},{"garageId":"100F6C0B-289B-41A8-9B03-57DD564A6596","workshopName":"KUMAR AUTOMOBILES","fullAddress":"B-281.OKHLA INDUSTRIAL AREA,B-281,OKHLA INDUSTRIAL AREAPH-1,NEW DELHI-110020PH-1,NEW DELHI-110020","city":"NEW DELHI","state":"Delhi","pincode":"110020","latitude":"28.535702520000001","workLatitudeshopName":null,"productType":"Private Car","emailId":"KUMARAUTOMOBILESMUZ@GMAIL.COM","mobileNumber":"7631999360","contactPerson":"Deepak Kumar"},{"garageId":"14C6E188-0056-4E85-A2A1-78D748BC4E0E","workshopName":"LAKOZY TOYOTA","fullAddress":"TOYOTA LAKOZY AUTO PVT LTD. Sanghi Oxygen Compund, Opp Ahura Center, Mahakali Caves Road, Chakala, Andheri East, Mumbai, Maharashtra 400093","city":"MUMBAI","state":"Maharashtra","pincode":"400093","latitude":"19.11627511","workLatitudeshopName":null,"productType":"Private Car","emailId":"insurance2@toyotalakozy.com","mobileNumber":"9870500036","contactPerson":"LAKOZY TOYOTA"},{"garageId":"1FF823DB-2948-4015-BD06-3075F479CD4E","workshopName":"MILLENNIUM TOYOTA","fullAddress":"PLOT NO.B-27 OPP.TELEPHONE EXCHANGE MAIN ROAD WAGLE ESTATE","city":"THANE","state":"Maharashtra","pincode":"400604","latitude":"19.19422015","workLatitudeshopName":null,"productType":"Private Car","emailId":"insurance@milleniumtoyota.co.in","mobileNumber":"9167770100","contactPerson":"MILLENNIUM TOYOTA"},{"garageId":"2596F2DE-060C-4125-9524-F9BF294E85E1","workshopName":"SHIELD AUTOGLASS LIMITED","fullAddress":"328/3, Bund garden Road,Bharat Petroleum Petrol Pump, Opp. Wadia College","city":"Pune","state":"Maharashtra","pincode":"411001","latitude":"18.534472999999998","workLatitudeshopName":null,"productType":"Private Car","emailId":"pune@windshieldexperts.com","mobileNumber":null,"contactPerson":"Mr. Chandrakant Dhusia"},{"garageId":"2CDE34F4-2E49-4011-983E-CEC43BB58490","workshopName":"SHALIMAR MOTORS","fullAddress":"C-91/9,WAZIRPUR INDL.AREA DELHI-52,---","city":"DELHI","state":"Delhi","pincode":"110052","latitude":"28.699954300000002","workLatitudeshopName":null,"productType":"Private Car","emailId":"rpgupta11@gmail.com","mobileNumber":"9811171489","contactPerson":"SH.R.P.GUPTA"},{"garageId":"2E9799E8-4773-4938-A562-ADB9A2EB6CB1","workshopName":"COMPETENT AUTOMOBILES CO LTD","fullAddress":"PLOT NO.3 GAZIPUR EAST DELHI,PLOT NO.3 GAZIPUR EAST DELHI","city":"DELHI","state":"Delhi","pincode":"110092","latitude":"28.640528","workLatitudeshopName":null,"productType":"Private Car","emailId":"arvindaru.01@gmail.com","mobileNumber":"9582797736","contactPerson":"H P CHAUHAN"},{"garageId":"D15F3200-ABA0-4CE2-AE42-8A23F2C6E478","workshopName":"AAA VEHICLEADES PVT. LTD","fullAddress":"9/55 KIRTI NAGAR INDUSTRIAL AREA NEW DELHI-15","city":"NEW DELHI","state":"Delhi","pincode":"110015","latitude":"28.539266699999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"Bodyshop.aaa@gmail.com","mobileNumber":"9560794151","contactPerson":"MR Ravinder Kumar"},{"garageId":"3E688935-0301-470E-9F9D-33A0A6900320","workshopName":"Autocreate Wheels Pvt Ltd","fullAddress":"BANSAL ESTATE 682 SAKI VIHAR ROAD CHANDIVALI NAKA,SAKINAKA ANDHERI EAST MUMBAI - 400072","city":"MUMBAI","state":"Maharashtra","pincode":"400072","latitude":"19.117768900000002","workLatitudeshopName":null,"productType":"Private Car","emailId":"service@autocreatewheels.co.in","mobileNumber":"9029076905","contactPerson":"Rajesh Yadav"},{"garageId":"BF86D4A0-B597-4381-B52D-B9F98A7A64D3","workshopName":"MADHUBAN TOYOTA","fullAddress":"Shrikant, Tulsi Enterprise Bldg, Veer, Shrikanth Hadkar Marg, near Cotton Green Station, Cotton Green West, Mumbai, Maharashtra 400033","city":"MUMBAI","state":"Maharashtra","pincode":"400033","latitude":"18.986011999999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"insurancesales@madhubantoyota.com","mobileNumber":"9619484486","contactPerson":"MADHUBAN TOYOTA"},{"garageId":"BF88B25D-D0D3-4B12-B9E2-1528239D36F9","workshopName":"COMPETENT AUTOMOBILES CO LTD","fullAddress":"23/2 Matiala Phirni,Pocket C Sector 3, DwarkaNew Delhi - 110075","city":"NEW DELHI","state":"Delhi","pincode":"110075","latitude":"28.580782110000001","workLatitudeshopName":null,"productType":"Private Car","emailId":"bsmmatiala@competent-maruti.com","mobileNumber":"9810432003","contactPerson":"Naresh Kumar"},{"garageId":"C726EDF2-F224-48D8-ABBD-1AF1F88CF5BB","workshopName":"SHARAYU TOYOTA","fullAddress":"Plot No 27, Telco Rd, Balaji Nagar, MIDC, Bhosari, Pimpri-Chinchwad, Pune, Maharashtra 411026","city":"PUNE","state":"Maharashtra","pincode":"411026","latitude":"18.465332010000001","workLatitudeshopName":null,"productType":"Private Car","emailId":"insurance@sharayu.in","mobileNumber":"8888826463","contactPerson":"SHARAYU TOYOTA"},{"garageId":"D20343F4-C11E-451D-8CB9-548ED1FE152C","workshopName":"AAA VEHICLEADES PVT. LTD","fullAddress":"B-244, OKKLA,OKHLA INDUSTRIAL AREAPHASE -1NEW DELHI 110020","city":"NEW DELHI","state":"Delhi","pincode":"110020","latitude":"28.535702520000001","workLatitudeshopName":null,"productType":"Private Car","emailId":"okhla.bs@aaavehicleades.in","mobileNumber":"9717791827","contactPerson":"T.A KHAN"},{"garageId":"43AB4208-927F-4679-82AF-F997B925ED8E","workshopName":"Krish Automotors Pvt Ltd","fullAddress":"118 S.M.A,CO-OPERATIVEINDL.ESTATE.G T K DELHI-110033","city":"NEW DELHI","state":"Delhi","pincode":"110033","latitude":"28.723780059999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"achal.srivastava@krishautomotors.com","mobileNumber":"7838594604","contactPerson":"Achal Srivastava"},{"garageId":"53C09054-928B-4AD8-9CB9-EB6734CC77BF","workshopName":"SAYA AUTOMOBILES LTD","fullAddress":"Khasra No.290/2 Siraspur Delhi-110042,","city":"DELHI","state":"Delhi","pincode":"110042","latitude":"28.750527980000001","workLatitudeshopName":null,"productType":"Private Car","emailId":"saya.ndl.gmsrv1@marutidealers.com","mobileNumber":"9582777428","contactPerson":"JAVED AHMED"},{"garageId":"D5B3F5A0-F303-4C59-9561-06FBF9F253FD","workshopName":"BHANDARI AUTOMOBILES","fullAddress":"BHANGHIHATI MORE,MADPUR BUS STOP,OLD DELHI ROAD,SERAMPOREHOOGHLY - 711203","city":"SREERAMPORE","state":"Delhi","pincode":"712201","latitude":"22.6221365","workLatitudeshopName":null,"productType":"Private Car","emailId":"bodyshop.srmbhandari@gmail.com","mobileNumber":"8336070346","contactPerson":"AMARNATH CHOWDARY"},{"garageId":"D5BEF22F-EA56-43ED-80B6-284762DFF18E","workshopName":"LAKOZY TOYOTA","fullAddress":"Behind Indian Oil Petrol Pump, Near Kashimira Signal Service Road, Western Express Hwy, Mira Road,Thane, Maharashtra 401104\r\nEXPRESS HIGHWAY MIRA ROAD\r\nTHANEMAHARASHTRA\r\nMUMBAI401104","city":"Thane","state":"Maharashtra","pincode":"401104","latitude":"19.270405799999999","workLatitudeshopName":null,"productType":"Private Car","emailId":"toyotainsurance@toyotalakozy.com","mobileNumber":"7710007046","contactPerson":"LAKOZY TOYOTA"}],"premiumBasicDetailsList":[{"premiumBasicDetailsId":"70D1D5B8-2A4B-4569-9F79-323D17D6FB96","title":"Also included In This Plan","subDetailsList":[{"premiumBasicDetailId":"70D1D5B8-2A4B-4569-9F79-323D17D6FB96","subtitleId":"4255ADC7-6272-4B7C-BE4D-DE3F38CD26B0","subtitle":"Road Accidents","description":"Damages caused to your bike in accidents or collision will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/car-svgrepo-com.svg"},{"premiumBasicDetailId":"70D1D5B8-2A4B-4569-9F79-323D17D6FB96","subtitleId":"39DD3A77-0E1C-461F-BE27-31734CDC1B40","subtitle":"Theft of your car","description":"Loss of your car due to theft or burglary is covered","icon":"https://preprod.heroinsurance.com/images/Icons/lock_open_black_24dp.svg"},{"premiumBasicDetailId":"70D1D5B8-2A4B-4569-9F79-323D17D6FB96","subtitleId":"23EA5448-5CF5-4BFB-B725-9C378B00D5E3","subtitle":"Man-made disasters","description":"Damages incurred by your bike in man-made disasters like riots, strikes, terrorsism, vandalism, etc will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/user.svg"},{"premiumBasicDetailId":"70D1D5B8-2A4B-4569-9F79-323D17D6FB96","subtitleId":"487AA576-EB94-4B8C-A9D5-FF08CA7D7C0E","subtitle":"Natural calamities","description":"Damages sustained by your bike in natural disasters such as earthquakes, floods, cyclones, etc will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/cloud-drizzle.svg"}]},{"premiumBasicDetailsId":"FAB9F96D-56C1-4953-867C-4D7B97E6699E","title":"Whats Not Covered","subDetailsList":[{"premiumBasicDetailId":"FAB9F96D-56C1-4953-867C-4D7B97E6699E","subtitleId":"4255ADC7-6272-4B7C-BE4D-DE3F38CD26B0","subtitle":"Road Accidents","description":"Damages caused to your bike in accidents or collision will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/car-svgrepo-com.svg"},{"premiumBasicDetailId":"FAB9F96D-56C1-4953-867C-4D7B97E6699E","subtitleId":"39DD3A77-0E1C-461F-BE27-31734CDC1B40","subtitle":"Theft of your car","description":"Loss of your car due to theft or burglary is covered","icon":"https://preprod.heroinsurance.com/images/Icons/lock_open_black_24dp.svg"},{"premiumBasicDetailId":"FAB9F96D-56C1-4953-867C-4D7B97E6699E","subtitleId":"23EA5448-5CF5-4BFB-B725-9C378B00D5E3","subtitle":"Man-made disasters","description":"Damages incurred by your bike in man-made disasters like riots, strikes, terrorsism, vandalism, etc will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/user.svg"},{"premiumBasicDetailId":"FAB9F96D-56C1-4953-867C-4D7B97E6699E","subtitleId":"487AA576-EB94-4B8C-A9D5-FF08CA7D7C0E","subtitle":"Natural calamities","description":"Damages sustained by your bike in natural disasters such as earthquakes, floods, cyclones, etc will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/cloud-drizzle.svg"}]},{"premiumBasicDetailsId":"E9608BEB-DCAF-4F94-8A68-C9B31895EBC3","title":"Whats Covered","subDetailsList":[{"premiumBasicDetailId":"E9608BEB-DCAF-4F94-8A68-C9B31895EBC3","subtitleId":"4255ADC7-6272-4B7C-BE4D-DE3F38CD26B0","subtitle":"Road Accidents","description":"Damages caused to your bike in accidents or collision will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/car-svgrepo-com.svg"},{"premiumBasicDetailId":"E9608BEB-DCAF-4F94-8A68-C9B31895EBC3","subtitleId":"39DD3A77-0E1C-461F-BE27-31734CDC1B40","subtitle":"Theft of your car","description":"Loss of your car due to theft or burglary is covered","icon":"https://preprod.heroinsurance.com/images/Icons/lock_open_black_24dp.svg"},{"premiumBasicDetailId":"E9608BEB-DCAF-4F94-8A68-C9B31895EBC3","subtitleId":"23EA5448-5CF5-4BFB-B725-9C378B00D5E3","subtitle":"Man-made disasters","description":"Damages incurred by your bike in man-made disasters like riots, strikes, terrorsism, vandalism, etc will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/user.svg"},{"premiumBasicDetailId":"E9608BEB-DCAF-4F94-8A68-C9B31895EBC3","subtitleId":"487AA576-EB94-4B8C-A9D5-FF08CA7D7C0E","subtitle":"Natural calamities","description":"Damages sustained by your bike in natural disasters such as earthquakes, floods, cyclones, etc will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/cloud-drizzle.svg"}]},{"premiumBasicDetailsId":"E9604315-A119-4D74-8DE9-62754791163D","title":"Claims Coverage","subDetailsList":[{"premiumBasicDetailId":"E9604315-A119-4D74-8DE9-62754791163D","subtitleId":"4255ADC7-6272-4B7C-BE4D-DE3F38CD26B0","subtitle":"Road Accidents","description":"Damages caused to your bike in accidents or collision will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/car-svgrepo-com.svg"},{"premiumBasicDetailId":"E9604315-A119-4D74-8DE9-62754791163D","subtitleId":"39DD3A77-0E1C-461F-BE27-31734CDC1B40","subtitle":"Theft of your car","description":"Loss of your car due to theft or burglary is covered","icon":"https://preprod.heroinsurance.com/images/Icons/lock_open_black_24dp.svg"},{"premiumBasicDetailId":"E9604315-A119-4D74-8DE9-62754791163D","subtitleId":"23EA5448-5CF5-4BFB-B725-9C378B00D5E3","subtitle":"Man-made disasters","description":"Damages incurred by your bike in man-made disasters like riots, strikes, terrorsism, vandalism, etc will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/user.svg"},{"premiumBasicDetailId":"E9604315-A119-4D74-8DE9-62754791163D","subtitleId":"487AA576-EB94-4B8C-A9D5-FF08CA7D7C0E","subtitle":"Natural calamities","description":"Damages sustained by your bike in natural disasters such as earthquakes, floods, cyclones, etc will be covered","icon":"https://preprod.heroinsurance.com/images/Icons/cloud-drizzle.svg"}]}],"transactionID":"65982C6F-660A-4162-830C-1B98386CD128","rtoCode":null,"planType":null,"isSATPDateMandatory":false,"isSAODDateMandatory":false,"registrationDate":null,"manufacturingDate":null,"vehicleNumber":null,"applicationId":"HERO71788","proposalNumber":"HERO71788","paymentURLLink":"https://dev.heroinsurance.com:8443/insuranceweb/IFFCO/SubmitIFFCOPayment/6C2A170A-3100-41BB-9CE3-5FA7B6C8A2F1/1ABF6E56-FF59-4813-83B1-84F26473B99B?uniqId=HERO71788","isBreakIn":false,"isSelfInspection":false,"isQuoteDeviation":false,"isApprovalRequired":false,"paymentStatus":null,"paymentTransactionNumber":null,"bankName":null,"bankPaymentRefNum":null,"paymentMode":null,"paymentDate":null,"ckycStatus":"KYC_SUCCESS","type":"INSERT","ckycLink":null,"ckycFailReason":null,"policyDocumentLink":null,"documentId":null,"policyNumber":"HERO71788","customerId":null,"validationMessage":null,"breakinStatus":null,"inspectionId":null,"isTP":false,"breakinId":null,"isHtml":false,"quoteId":null,"proposalId":null,"policyId":null,"breakinInspectionURL":null,"paymentCorrelationId":null,"garageDescription":"Ai Assisted Claims Process","leadId":null,"isDocumentUpload":false,"isPOARedirectionURL":false,"nuM_REFERENCE_NUMBER":null}
+2023-12-15 17:57:13.756 +05:30 [INF] Executed action Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API) in 20479.7408ms
+2023-12-15 17:57:13.756 +05:30 [INF] Executed endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-15 17:57:13.756 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44347/api/v1/Quote/CreateProposal/E656D5D1-5239-4E48-9048-228C67AE3AC3/65982C6F-660A-4162-830C-1B98386CD128/88a807b3-90e4-484b-b5d2-65059a8e1a91/false - 0 - 200 - application/json;+charset=utf-8 20488.7801ms

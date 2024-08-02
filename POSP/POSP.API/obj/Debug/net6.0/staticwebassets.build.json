@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3I6mzLogPf5uhIfM/ViOntLFjkpaN0I/Dg5EKYjWZFY=",
+  "Source": "POSP.API",
+  "BasePath": "_content/POSP.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

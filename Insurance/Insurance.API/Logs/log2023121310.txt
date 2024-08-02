@@ -1,0 +1,18 @@
+2023-12-13 10:59:25.085 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-13 10:59:25.505 +05:30 [INF] Now listening on: https://localhost:7217
+2023-12-13 10:59:25.507 +05:30 [INF] Now listening on: http://localhost:5217
+2023-12-13 10:59:25.512 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-13 10:59:25.514 +05:30 [INF] Hosting environment: Development
+2023-12-13 10:59:25.515 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\
+2023-12-13 10:59:29.385 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/swagger/index.html - -
+2023-12-13 10:59:30.102 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/swagger/index.html - - - 200 - text/html;charset=utf-8 725.2834ms
+2023-12-13 10:59:30.115 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/_framework/aspnetcore-browser-refresh.js - -
+2023-12-13 10:59:30.120 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 5.3425ms
+2023-12-13 10:59:30.123 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/_vs/browserLink - -
+2023-12-13 10:59:30.192 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 68.9256ms
+2023-12-13 10:59:30.248 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/swagger/v1/swagger.json - -
+2023-12-13 10:59:31.001 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 753.3751ms
+2023-12-13 10:59:54.105 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7217/api/v1/Quote/CreateProposal/DC874A12-6667-41AB-A7A1-3BB832B59CEB/5AAF15E8-A1CC-407F-A885-650B1BBE1F13/6e7cb14f-d5a8-4c8b-8ab8-99c6e0030056/false - 0
+2023-12-13 10:59:54.130 +05:30 [INF] CORS policy execution successful.
+2023-12-13 10:59:54.422 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-13 10:59:54.486 +05:30 [INF] Route matched with {action = "CreateProposal", controller = "Quote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Insurance.Domain.GoDigit.QuoteResponseModel]] CreateProposal(System.String, System.String, System.String, Boolean, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.QuoteController (Insurance.API).

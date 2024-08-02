@@ -1,0 +1,17 @@
+﻿@model Insurance.Web.Models.HDFCPaymentRequestModel
+<html>
+<head>
+</head>
+<body onload="document.forms[0].submit()">
+    <form name="PAYMENTFORMhdfc" method="post" action="@Model.CheckSumURL">
+        <input name="Trnsno" type="hidden" value="@Model.Trnsno">
+        <input name="Amt" type="hidden" value="@Model.Amt">
+        <input name="Appid" type="hidden" value="@Model.Appid">
+        <input name="Subid" type="hidden" value="@Model.Subid">
+        <input name="Surl" type="hidden" value="@Model.StatusURL">
+        <input name="Furl" type="hidden" value="@Model.StatusURL">
+        <input name="Src" type="hidden" value="POST">
+        <input name="Chksum" type="hidden" value="@Model.Chksum">
+    </form>
+</body>
+</html>

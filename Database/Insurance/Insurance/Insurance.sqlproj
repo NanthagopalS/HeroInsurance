@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Insurance</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{224f9176-473e-4ab8-8de1-0e405c36a302}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Insurance</RootNamespace>
+    <AssemblyName>Insurance</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="MOTOR\" />
+    <Folder Include="MOTOR\Tables\" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\Sequences\" />
+    <Folder Include="dbo\User Defined Types\" />
+    <Folder Include="MOTER\" />
+    <Folder Include="MOTER\Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Insurance_PACoverMapping.sql" />
+    <Build Include="MOTOR\Tables\ITGI_OCCUPATIONMaster.sql" />
+    <Build Include="MOTOR\Tables\ITGI_SALUTATIONMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_StageMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_AccessoryMapping.sql" />
+    <Build Include="dbo\Tables\Insurance_Year.sql" />
+    <Build Include="MOTOR\Tables\GoDigit_StateMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_AddOnsExtension.sql" />
+    <Build Include="MOTOR\Tables\ICICI_VehicleMaster.sql" />
+    <Build Include="MOTOR\Tables\HDFC_PincodeMasterAndLocality.sql" />
+    <Build Include="MOTOR\Tables\HDFC_ExtensionCountryMaster.sql" />
+    <Build Include="MOTOR\Tables\HDFC_FinancierMaster.sql" />
+    <Build Include="MOTOR\Tables\HDFC_RelationMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_ICConfig.sql" />
+    <Build Include="dbo\Tables\Insurance_AddOnsPackage.sql" />
+    <Build Include="MOTOR\Tables\HDFC_SalutationMaster.sql" />
+    <Build Include="MOTOR\Tables\GoDigit_VehicleMaster.sql" />
+    <Build Include="MOTOR\Tables\HDFC_RTOMasterMotor.sql" />
+    <Build Include="MOTOR\Tables\Bajaj_PrevInsuranceCompanyCode.sql" />
+    <Build Include="MOTOR\Tables\Bajaj_RTOCityMaster.sql" />
+    <Build Include="MOTOR\Tables\Chola_VehicleMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_DiscountExtension.sql" />
+    <Build Include="MOTOR\Tables\Chola_RTOMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_PreviousPolicyType.sql" />
+    <Build Include="MOTOR\Tables\Chola_PincodeMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_DiscountMapping.sql" />
+    <Build Include="MOTOR\Tables\Chola_PreviousInsurerMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_ApplicationConfig.sql" />
+    <Build Include="dbo\Tables\Identity_City.sql" />
+    <Build Include="dbo\Tables\Identity_State.sql" />
+    <Build Include="dbo\Tables\Insurance_ProductCategory.sql" />
+    <Build Include="dbo\Tables\Insurance_LeadDetails.sql" />
+    <Build Include="dbo\Tables\Insurance_KYCField.sql" />
+    <Build Include="dbo\Tables\Insurance_City.sql" />
+    <Build Include="dbo\Tables\Insurance_CKYCField.sql" />
+    <Build Include="MOTOR\Tables\ICICI_RTOMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_Fuel.sql" />
+    <Build Include="dbo\Tables\Insurance_Documents.sql" />
+    <Build Include="dbo\Tables\Insurance_Insurer.sql" />
+    <Build Include="MOTOR\Tables\TATA_RTOMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_Make.sql" />
+    <Build Include="dbo\Tables\Insurance_Model.sql" />
+    <Build Include="dbo\Tables\Insurance_NCB.sql" />
+    <Build Include="dbo\Tables\Insurance_Financier.sql" />
+    <Build Include="dbo\Tables\Insurance_InsuranceType.sql" />
+    <Build Include="dbo\Tables\Insurance_NomineeRelation.sql" />
+    <Build Include="dbo\Tables\Insurance_CKYCDocumentField.sql" />
+    <Build Include="dbo\Tables\Insurance_PreviousPolicyTypeMapping.sql" />
+    <Build Include="dbo\Tables\Insurance_LeadNomineeDetails.sql" />
+    <Build Include="dbo\Tables\Insurance_VehicleRegistration.sql" />
+    <Build Include="dbo\Tables\Insurance_CKYCTransaction.sql" />
+    <Build Include="dbo\Tables\Insurance_Product.sql" />
+    <Build Include="dbo\Tables\Insurance_LeadAddressDetails.sql" />
+    <Build Include="MOTOR\Tables\GoDigit_Nominee.sql" />
+    <Build Include="dbo\Tables\Insurance_RTO.sql" />
+    <Build Include="MOTOR\Tables\GoDigit_PinCode.sql" />
+    <Build Include="MOTOR\Tables\GoDigit_PreviousInsurer.sql" />
+    <Build Include="dbo\Tables\Insurance_State.sql" />
+    <Build Include="MOTOR\Tables\GoDigit_RTO.sql" />
+    <Build Include="dbo\Tables\Insurance_SubProduct.sql" />
+    <Build Include="MOTOR\Tables\Bajaj_RelationMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_Accessory.sql" />
+    <Build Include="dbo\Tables\Insurance_Variant.sql" />
+    <Build Include="dbo\Tables\Insurance_AddOns.sql" />
+    <Build Include="dbo\Tables\Insurance_VehicleType.sql" />
+    <Build Include="MOTOR\Tables\ICICI_City_Master.sql" />
+    <Build Include="dbo\Tables\Insurance_ProposalField.sql" />
+    <Build Include="dbo\Tables\Insurance_CashlessGarage.sql" />
+    <Build Include="MOTOR\Tables\ICICI_PrevInsurer_Relation_Occupation_Financier_Master.sql" />
+    <Build Include="MOTOR\Tables\HDFC_CityDistrict.sql" />
+    <Build Include="MOTOR\Tables\ICICI_State.sql" />
+    <Build Include="dbo\Tables\Insurance_Discounts.sql" />
+    <Build Include="dbo\Tables\Insurance_Gender.sql" />
+    <Build Include="dbo\Tables\Insurance_PACover.sql" />
+    <Build Include="dbo\Tables\Insurance_PACoverExtension.sql" />
+    <Build Include="MOTOR\Tables\Bajaj_ProfessionMaster.sql" />
+    <Build Include="MOTOR\Tables\HDFC_BankMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_PremiumBasicDetail.sql" />
+    <Build Include="dbo\Tables\Insurance_ProposalDynamicDetails.sql" />
+    <Build Include="MOTOR\Tables\HDFC_InsuranceMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_PremiumBasicSubtitleDetail.sql" />
+    <Build Include="dbo\Tables\Insurance_QuoteTransaction.sql" />
+    <Build Include="MOTOR\Tables\HDFC_RTOMasterCar.sql" />
+    <Build Include="MOTOR\Tables\HDFC_State.sql" />
+    <Build Include="MOTOR\Tables\HDFC_VehicleMaster.sql" />
+    <Build Include="MOTOR\Tables\Godigit_FinancierMaster.sql" />
+    <Build Include="MOTOR\Tables\ITGI_RTO_CityMaster.sql" />
+    <Build Include="MOTOR\Tables\ITGI_StateMasters.sql" />
+    <Build Include="dbo\Tables\Insurance_PaymentTransaction.sql" />
+    <Build Include="MOTOR\Tables\ITGI_PreviousInsurerMaster.sql" />
+    <Build Include="MOTOR\Tables\ITGI_VehicleMaster.sql" />
+    <Build Include="dbo\Tables\tblSQLShackDemo.sql" />
+    <Build Include="MOTOR\Tables\Reliance_RTOMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_VehicleMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_PincodeMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_PreviousInsurerMaster.sql" />
+    <Build Include="dbo\Tables\Identity_ErrorDetail.sql" />
+    <Build Include="MOTOR\Tables\ITGI_GenderMaster.sql" />
+    <Build Include="MOTOR\Tables\Bajaj_VehicleMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_RTOCode.sql" />
+    <Build Include="MOTOR\Tables\ITGI_NotDeclineMakes_TPMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_AddOnsMapping.sql" />
+    <Build Include="MOTOR\Tables\ITGI_MaritalStatusMaster.sql" />
+    <Build Include="Security\devhero.sql" />
+    <Build Include="Security\devhero_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Functions\Insurance_ProposalFieldMapper.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetInsuranceType.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetICICIBreakinStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetBajajBreakinDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetICICIBreakinDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetQuoteMasterMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetCKYCPaymentStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertQuoteTransaction.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetICICIPaymentStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetGarageAndPremiumBasicDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateICICIBreakinStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetBajajQuoteMasterMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetBreakInPaymentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetFuelTypeByModelId.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetICICIMasterMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetQuoteValidation.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertVehicleRegistrationDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetQuoteConfirmDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetPreviousPolicyType.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertQuoteTransaction_12012023.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetApplicationConfig.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertLeadDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetPOSPUserMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetICICIQuoteMasterMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCKYCFields.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCKYCMasters.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetFinancierMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCityMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetBajajCKYCDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCKYCDocumentField.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetProposalFields_15032023.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetICICICityStateCountry.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertLeadAddress.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertLeadNominee.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetHDFCQuoteMasterMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetBajajProposalMasters.sql" />
+    <Build Include="dbo\Stored Procedures\GetProposalDynamicMasterData.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetProposalFields.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_SaveCKYCDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetProposalSummary.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertPaymentTransaction.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCKYCDataMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetPaymentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetProposalDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetPolicyDocumentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetHDFCMasterData.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdatePolicyDocumentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertQuoteConfirmTransaction.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCholaQuoteMasterMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetMakeModelFuel.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetQuoteTransactionDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetVariant.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateGodigitPolicyDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetLeadDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_SaveQuoteTransaction.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetGoDigitCityState.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertUserDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetBreakinDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_SaveUpdateProposal.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetQuoteMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertErrorDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GodigitUpdateProposalLeadDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertInsuranceICConfig.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetRTO.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetInsurer.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetDashboardLeadDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetNCB.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetICICIBreakinMaster.sql" />
+    <Build Include="dbo\Sequences\SEQ_LeadTransactionId.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateProposalLeadDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateBreakinDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCKYCStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateCholaPaymentDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetPospId.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetCKYCPOAStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetBajajBreakinStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetRenewalDetailsById.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetQuoteTransactionId.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetICICIQuoteConfirmDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetHDFCPaymentFields.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCustomerDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertICICIPaymentTransaction.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetParticularLeadDetailById.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetICICIQuoteResponse.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCholaQuoteResponse.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCholaQuotationId.sql" />
+    <Build Include="MOTOR\Tables\Chola_FinancierMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateLeadPaymentLink.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateCholaBreakinStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetCholaCKYCStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetCholaBreakinStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCholaMasterData.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetAllReport.sql" />
+    <Build Include="dbo\Tables\Insurance_PaymentStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetCholaPaymentStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetBusinessSummeryReport.sql" />
+    <Build Include="dbo\Stored Procedures\GetNewAndActivePOSPDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetPaymentStatusList.sql" />
+    <Build Include="dbo\Tables\Insurance_SharePlanDetails.sql" />
+    <Build Include="dbo\Tables\Insurance_OTP.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_POSPReportFormate.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertOTPDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetSharePlanLeadDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetProposalMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetLeadPreviousPolicyType.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCholaCkycPOAResponse.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_AuthenticateUser.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCholaBreakinDetails.sql" />
+    <Build Include="dbo\Tables\Insurance_GetPreviousCoverMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetPreviousCover.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_RequestandResponseRequest.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetIFFCOQuoteMasterMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetIFFCOProposalTransactionId.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetIFFCOProposalMasters.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetIFFCOProposalDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetIFFCOCustomerType.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetIFFCOBreakinDetails.sql" />
+    <Build Include="MOTOR\Tables\ITGI_NomineeRelationMaster.sql" />
+    <Build Include="MOTOR\Tables\ITGI_FinancierMaster.sql" />
+    <Build Include="MOTOR\Tables\ITGI_CityMasters.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetIFFCOBreakinStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetUserIdDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetProposalDetailsForPayment.sql" />
+    <Build Include="dbo\Tables\Insurance_PremiumDetails.sql" />
+    <Build Include="dbo\Tables\Insurance_PolicyDumpTableHistory.sql" />
+    <Build Include="dbo\Tables\Insurance_PolicyDumpTable.sql" />
+    <Build Include="dbo\Tables\Insurance_ManualPolicyErrorLogHistory.sql" />
+    <Build Include="dbo\Tables\Insurance_ManualPolicyErrorLog.sql" />
+    <Build Include="dbo\Tables\Insurance_ManualLeadDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_ManualPolicyValidation.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_ManualPolicyMigrationResponce.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_ManualPolicyMigration.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_ManualPolicyCreation.sql" />
+    <Build Include="dbo\User Defined Types\PolicyDumpTableType.sql" />
+    <Build Include="MOTOR\Tables\TATA_VehicleMaster.sql" />
+    <Build Include="MOTOR\Tables\TATA_SalutationMaster.sql" />
+    <Build Include="MOTOR\Tables\TATA_RelationShipMaster.sql" />
+    <Build Include="MOTOR\Tables\TATA_PrevInsuranceMaster.sql" />
+    <Build Include="MOTOR\Tables\TATA_PincodeMaster.sql" />
+    <Build Include="MOTOR\Tables\TATA_OccupationMaster.sql" />
+    <Build Include="MOTOR\Tables\TATA_FinancierMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_Salutation.sql" />
+    <Build Include="MOTOR\Tables\Reliance_NomineeRelationship.sql" />
+    <Build Include="MOTOR\Tables\Reliance_MaritalStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateIFFCOPaymentLinkDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_Job_GetTATABreakinAndPaymentStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertBreakinDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetTATAQuoteMasterMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetTATAMasterData.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetRelianceStateCityId.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetReliancePreviousInsurer.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetPolicyStatusReport.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetLeadsDetailAdmin.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCholaBreakinNotificationDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetManualPolicyNature.sql" />
+    <Build Include="dbo\Tables\Insurance_ManualPolicyNatureTypeMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetManualPolicyList.sql" />
+    <Build Include="dbo\Tables\Insurance_PolicyMigrationExcelInsurerMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetInsuranceMaster.sql" />
+    <Build Include="Security\MOTOR.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetRelianceMasterData.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetLeadDetailsByApplicationId.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetRelianceMasterData.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_DoesTATAVariantAndRTOExists.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_DoesRelianceVariantAndRTOExists.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_DoesIFFCOVariantAndRTOExists.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_DoesICICIVariantAndRTOExists.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_DoesHDFCVariantAndRTOExists.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_DoesGoDigitVariantAndRTOExists.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_DoesCholaVariantAndRTOExists.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_DoesBajajVariantAndRTOExists.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateIFFCOProposalId.sql" />
+    <Build Include="MOTOR\Tables\TATA_AddonPackageAgeValidationMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_OccupationMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_FinancierMaster.sql" />
+    <Build Include="dbo\Tables\Tbl_QuotationRequest.sql" />
+    <Build Include="dbo\Tables\Tata_PackageMaster.sql" />
+    <Build Include="dbo\Tables\Tata_AddonPackageMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_KeyHighlightsDescription.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertQuoteRequest.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetTATALeadIdAndPaymentId.sql" />
+    <Build Include="dbo\Tables\Insurance_PrevNCBVehicleAge.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateQuoteTransactionId.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertKYCDetailsAfterProposal.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetDetailsForTATAKYCAfterProposal.sql" />
+    <Build Include="MOTOR\Tables\Oriental_voluntaryExcessMaster.sql" />
+    <Build Include="MOTOR\Tables\Oriental_VehicleMaster.sql" />
+    <Build Include="MOTOR\Tables\Oriental_StateMaster.sql" />
+    <Build Include="MOTOR\Tables\Oriental_RTOMaster.sql" />
+    <Build Include="MOTOR\Tables\Oriental_PinCodeMaster.sql" />
+    <Build Include="MOTOR\Tables\Oriental_IDVMaster.sql" />
+    <Build Include="MOTOR\Tables\Oriental_GeoExtensionMaster.sql" />
+    <Build Include="MOTOR\Tables\Oriental_CityMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetOrientalQuoteMasterMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetOrientalProposalMasters.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetDetailsForOrientalKYCAfterProposal.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_DoesOrientalVariantAndRTOExists.sql" />
+    <Build Include="MOTOR\Tables\Reliance_CV_OccupationMaster.sql" />
+    <Build Include="MOTOR\Tables\HDFC_CV_VehicleMaster.sql" />
+    <Build Include="MOTOR\Tables\HDFC_CV_SubClassMaster.sql" />
+    <Build Include="MOTOR\Tables\HDFC_CV_RTOMaster.sql" />
+    <Build Include="dbo\Tables\Insurance_CommercialVehicleUsageNature.sql" />
+    <Build Include="dbo\Tables\Insurance_CommercialVehicleSubCategory.sql" />
+    <Build Include="dbo\Tables\Insurance_CommercialVehicleCategory.sql" />
+    <Build Include="dbo\Tables\Insurance_CommercialVehicleCarrierType.sql" />
+    <Build Include="dbo\Tables\Insurance_CommercialVehicleBodyType.sql" />
+    <Build Include="dbo\Tables\Insurance_CommercialLeadDetail.sql" />
+    <Build Include="dbo\Tables\HeroBaseVehicleMaster.sql" />
+    <Build Include="dbo\Tables\CVVehiclesMMVData.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GoDigitVariantAndRTOIdCheck.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCV.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCommercialVehicleOtherDetailsAskOptions.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetCategorySubCategory.sql" />
+    <Build Include="dbo\Functions\RemoveNonAlphanumeric.sql" />
+    <Build Include="dbo\Functions\fn_GetCommonCharacters.sql" />
+    <Build Include="dbo\Functions\fn_calculateTranspositions.sql" />
+    <Build Include="dbo\Functions\fn_calculatePrefixLength.sql" />
+    <Build Include="dbo\Functions\fn_calculateMatchWindow.sql" />
+    <Build Include="dbo\Functions\fn_calculateJaroWinkler.sql" />
+    <Build Include="dbo\Functions\fn_calculateJaro.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetVariantProbabilityForReliance.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetVariantProbabilityForIFFCO.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetVariantProbabilityforICICI.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetVariantProbabilityforHDFC.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetVariantProbabilityforCHOLA.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetVariantProbabilityForBajaj.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetRelianceQuoteMasterMapping_1.sql" />
+    <Build Include="dbo\Functions\Insurance_GetVariantSuggestionForTATA.sql" />
+    <Build Include="dbo\Functions\Insurance_GetVariantSuggestionForReliance.sql" />
+    <Build Include="dbo\Functions\Insurance_GetVariantSuggestionForOriental.sql" />
+    <Build Include="dbo\Functions\Insurance_GetVariantSuggestionForIFFCO.sql" />
+    <Build Include="dbo\Functions\Insurance_GetVariantSuggestionForICICI.sql" />
+    <Build Include="dbo\Functions\Insurance_GetVariantSuggestionForHDFC.sql" />
+    <Build Include="dbo\Functions\Insurance_GetVariantSuggestionForGoDigit.sql" />
+    <Build Include="dbo\Functions\Insurance_GetVariantSuggestionForChola.sql" />
+    <Build Include="dbo\Functions\Insurance_GetVariantSuggestionForBajaj.sql" />
+    <Build Include="dbo\Functions\Insurance_GetAllVariantForModel.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetVariantProbabilityforGoDigit.sql" />
+    <Build Include="MOTOR\Tables\UIIC_VehicleMaster.sql" />
+    <Build Include="MOTOR\Tables\UIIC_StateMaster.sql" />
+    <Build Include="MOTOR\Tables\UIIC_SalutationMaster.sql" />
+    <Build Include="MOTOR\Tables\UIIC_RTOMaster.sql" />
+    <Build Include="MOTOR\Tables\UIIC_PreviousInsurerMaster.sql" />
+    <Build Include="MOTOR\Tables\UIIC_PinCode.sql" />
+    <Build Include="MOTOR\Tables\UIIC_MakeVehicle.sql" />
+    <Build Include="MOTOR\Tables\UIIC_FinancierMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_CV_VehicleMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_CV_RTOMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_CV_PreviousInsurerMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_CV_PincodeMaster.sql" />
+    <Build Include="MOTOR\Tables\Reliance_CV_FinancierMaster.sql" />
+    <Build Include="MOTER\Tables\UIIC_CityMaster.sql" />
+    <Build Include="dbo\Stored Procedures\SPGetAutoMatchingVMM.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdatePolicyDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetVariantProbabilityForTATA.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetVariantProbabilityforOriental.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetUnitedIndiaQuoteMasterMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_DoesUnitedIndiaVariantAndRTOExists.sql" />
+    <Build Include="Security\MOTER.sql" />
+    <Build Include="dbo\Tables\Insurance_PCVVehicleCategory.sql" />
+    <Build Include="dbo\Tables\Insurance_CommercialVehicleUsageType.sql" />
+    <Build Include="MOTOR\Tables\Reliance_CV_ProductCode.sql" />
+    <Build Include="MOTOR\Tables\UIIC_OccupationMaster.sql" />
+    <Build Include="MOTOR\Tables\UIIC_NomineeMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetUnitedIndiaLeadIdAndPaymentId.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetUIICMasterData.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_UpdateUIICCKYCPOAStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_GetUnitedIndiaFinancierDetails.sql" />
+    <Build Include="MOTOR\Tables\UIIC_FinancierBranchMaster.sql" />
+    <Build Include="dbo\User Defined Types\CoverMasterDetailsType.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_InsertPreviousCoverMasterDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Insurance_MoveQuoteDataToArchive.sql" />
+  </ItemGroup>
+</Project>

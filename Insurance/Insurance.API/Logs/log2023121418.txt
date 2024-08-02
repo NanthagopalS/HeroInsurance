@@ -1,0 +1,28 @@
+2023-12-14 18:55:56.771 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-14 18:55:57.204 +05:30 [INF] Now listening on: https://localhost:7217
+2023-12-14 18:55:57.206 +05:30 [INF] Now listening on: http://localhost:5217
+2023-12-14 18:55:57.211 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-14 18:55:57.213 +05:30 [INF] Hosting environment: Development
+2023-12-14 18:55:57.214 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\
+2023-12-14 18:56:00.979 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/swagger/index.html - -
+2023-12-14 18:56:01.838 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/swagger/index.html - - - 200 - text/html;charset=utf-8 866.2268ms
+2023-12-14 18:56:01.841 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/_framework/aspnetcore-browser-refresh.js - -
+2023-12-14 18:56:01.856 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 14.6856ms
+2023-12-14 18:56:01.858 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/_vs/browserLink - -
+2023-12-14 18:56:01.956 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 98.1221ms
+2023-12-14 18:56:02.020 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/swagger/v1/swagger.json - -
+2023-12-14 18:56:02.940 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 920.1474ms
+2023-12-14 18:56:39.232 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7217/api/v1/Quote/CreateProposal/DC874A12-6667-41AB-A7A1-3BB832B59CEB/1188AEBB-539F-4643-8480-9F8C830E48C2/2d566966-5525-4ed7-bd90-bb39e8418f39/false - 0
+2023-12-14 18:56:39.265 +05:30 [INF] CORS policy execution successful.
+2023-12-14 18:56:39.626 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-14 18:56:39.690 +05:30 [INF] Route matched with {action = "CreateProposal", controller = "Quote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Insurance.Domain.GoDigit.QuoteResponseModel]] CreateProposal(System.String, System.String, System.String, Boolean, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.QuoteController (Insurance.API).
+2023-12-14 18:57:13.576 +05:30 [ERR] UnitedIndia Proposal API Update Quote Error Object reference not set to an instance of an object.
+2023-12-14 18:57:14.824 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ThirdPartyUtilities.Models.ResultModel'.
+2023-12-14 18:57:14.846 +05:30 [INF] Response captured: {"statusCode":"400","message":"Failed","data":{"title":"BadRequest","status":400,"detail":" "}}
+2023-12-14 18:57:15.462 +05:30 [INF] Executed action Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API) in 35758.5495ms
+2023-12-14 18:57:15.475 +05:30 [INF] Executed endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-14 18:57:15.487 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7217/api/v1/Quote/CreateProposal/DC874A12-6667-41AB-A7A1-3BB832B59CEB/1188AEBB-539F-4643-8480-9F8C830E48C2/2d566966-5525-4ed7-bd90-bb39e8418f39/false - 0 - 400 - application/json;+charset=utf-8 36255.5852ms
+2023-12-14 18:57:22.725 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7217/api/v1/Quote/CreateProposal/DC874A12-6667-41AB-A7A1-3BB832B59CEB/1188AEBB-539F-4643-8480-9F8C830E48C2/2d566966-5525-4ed7-bd90-bb39e8418f39/false - 0
+2023-12-14 18:57:22.738 +05:30 [INF] CORS policy execution successful.
+2023-12-14 18:57:22.740 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-14 18:57:22.742 +05:30 [INF] Route matched with {action = "CreateProposal", controller = "Quote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Insurance.Domain.GoDigit.QuoteResponseModel]] CreateProposal(System.String, System.String, System.String, Boolean, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.QuoteController (Insurance.API).

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Hero_Insurance\Insurance\Insurance.Web\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>False|2023-05-05T12:30:55.0343102Z;False|2023-05-05T18:00:21.1356965+05:30;False|2023-05-05T17:59:28.3384158+05:30;False|2023-05-05T17:59:07.8956091+05:30;True|2023-05-04T14:54:28.0559724+05:30;True|2023-04-05T14:35:47.2327500+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,10 @@
+C:\Hero_Insurance\HeroInsurance\Database\Admin\Admin\bin\Debug\Admin.dacpac
+C:\Hero_Insurance\HeroInsurance\Database\Admin\Admin\bin\Debug\Admin.dll
+C:\Hero_Insurance\HeroInsurance\Database\Admin\Admin\bin\Debug\Admin.pdb
+C:\Hero_Insurance\HeroInsurance\Database\Admin\Admin\obj\Debug\Admin.sqlproj.AssemblyReference.cache
+C:\Hero_Insurance\HeroInsurance\Database\Admin\Admin\obj\Debug\Model.xml
+C:\Hero_Insurance\HeroInsurance\Database\Admin\Admin\obj\Debug\refactor.xml
+C:\Hero_Insurance\HeroInsurance\Database\Admin\Admin\obj\Debug\postdeploy.sql
+C:\Hero_Insurance\HeroInsurance\Database\Admin\Admin\obj\Debug\predeploy.sql
+C:\Hero_Insurance\HeroInsurance\Database\Admin\Admin\obj\Debug\Admin.dll
+C:\Hero_Insurance\HeroInsurance\Database\Admin\Admin\obj\Debug\Admin.pdb

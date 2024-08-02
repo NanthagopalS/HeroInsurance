@@ -1,0 +1,5 @@
+2023-12-22 14:16:23.550 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44347/api/v1/InsuranceMaster/CreateLead application/json 444
+2023-12-22 14:16:23.604 +05:30 [INF] CORS policy execution failed.
+2023-12-22 14:16:23.604 +05:30 [INF] Request origin https://localhost:44347 does not have permission to access the resource.
+2023-12-22 14:16:23.609 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.InsuranceMasterController.CreateLead (Insurance.API)'
+2023-12-22 14:16:23.618 +05:30 [INF] Route matched with {action = "CreateLead", controller = "InsuranceMaster"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Insurance.Core.Features.InsuranceMaster.Command.LeadDetails.CreateLeadVm]]] CreateLead(Insurance.Core.Features.InsuranceMaster.Command.LeadDetails.CreateLeadCommand, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.InsuranceMasterController (Insurance.API).

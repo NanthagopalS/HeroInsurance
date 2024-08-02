@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Identity</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{72879be0-c083-4c75-a8e0-6a4bc925ac13}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Identity</RootNamespace>
+    <AssemblyName>Identity</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\Functions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Identity_InsurerCompanyMaster.sql" />
+    <Build Include="dbo\Tables\Identity_POSPSourceTypeMaster.sql" />
+    <Build Include="dbo\Tables\TestMobile.sql" />
+    <Build Include="dbo\Tables\Identity_PremiumRangeTypeMaster.sql" />
+    <Build Include="dbo\Tables\Identity_UserRole.sql" />
+    <Build Include="dbo\Tables\TestPAN.sql" />
+    <Build Include="dbo\Tables\Identity_RoleModulePermissionMapping.sql" />
+    <Build Include="dbo\Tables\Identity_UserBreadcrumStatusMaster.sql" />
+    <Build Include="dbo\Tables\BannerDetail.sql" />
+    <Build Include="dbo\Tables\Identity_ErrorCode.sql" />
+    <Build Include="dbo\Tables\Identity_RoleType.sql" />
+    <Build Include="dbo\Tables\Identity_UserDetail.sql" />
+    <Build Include="dbo\Tables\Identity_PanVerification.sql" />
+    <Build Include="dbo\Tables\Identity_BenefitsDetail.sql" />
+    <Build Include="dbo\Tables\Identity_Configuration.sql" />
+    <Build Include="dbo\Tables\Identity_City.sql" />
+    <Build Include="dbo\Tables\Identity_RoleLevel.sql" />
+    <Build Include="dbo\Tables\Identity_State.sql" />
+    <Build Include="dbo\Tables\Identity_SMS.sql" />
+    <Build Include="dbo\Tables\Identity_SMSStage.sql" />
+    <Build Include="dbo\Tables\Identity_UserRoleMapping.sql" />
+    <Build Include="dbo\Tables\Identity_Module.sql" />
+    <Build Include="dbo\Tables\Identity_OTP.sql" />
+    <Build Include="dbo\Tables\Identity_UserBreadcrumStatusDetail.sql" />
+    <Build Include="dbo\Tables\Identity_BULevel.sql" />
+    <Build Include="dbo\Tables\Identity_ErrorDetail.sql" />
+    <Build Include="dbo\Tables\Identity_RoleMaster.sql" />
+    <Build Include="dbo\Tables\Identity_User.sql" />
+    <Build Include="dbo\Tables\Identity_UserAddressDetail.sql" />
+    <Build Include="dbo\Tables\Identity_UserBankDetail.sql" />
+    <Build Include="dbo\Tables\Identity_BU.sql" />
+    <Build Include="dbo\Tables\Identity_BankNameMaster.sql" />
+    <Build Include="dbo\Tables\Identity_UserCategory.sql" />
+    <Build Include="dbo\Tables\Identity_AutoGenerateId.sql" />
+    <Build Include="dbo\Tables\Identity_EducationQualificationTypeMaster.sql" />
+    <Build Include="dbo\Tables\Identity_DocumentTypeMaster.sql" />
+    <Build Include="dbo\Tables\Identity_Pincode.sql" />
+    <Build Include="dbo\Tables\Identity_DocumentDetail.sql" />
+    <Build Include="dbo\Tables\Identity_BankVerification.sql" />
+    <Build Include="dbo\Tables\Identity_InsuranceProductsOfInterest.sql" />
+    <Build Include="dbo\Tables\Identity_UserLog.sql" />
+    <Build Include="dbo\Tables\Identity_EmailVerification.sql" />
+    <Build Include="dbo\Tables\Identity_UserInquiry.sql" />
+    <Build Include="dbo\Tables\Identity_ResetPasswordVerification.sql" />
+    <Build Include="dbo\Tables\Identity_BackgroundTypeMaster.sql" />
+    <Build Include="Security\devhero.sql" />
+    <Build Include="Security\devhero_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_AdminInsertUserEmailVerificationLinkDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_BannerDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_CheckMobileExists.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_CheckPANExists.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_CheckUserByMobileNo.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_DeleteBenefitsDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetAdminUser.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetBenefitsDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetBUDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetCityByStateId.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetDocumentType.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetErrorCode.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetIBULevelDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetModuleDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetOTPCount.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetPOSPConfigurationDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetPOSPDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetPOSPSourceType.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetPOSPUserMaster.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetRejectedDocument.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetRoleLevelDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetRoleModulePermission.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetRoleModulePermissionALL.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetRoleTypeDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetStateCitybyPincode.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserandRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserAndRoleMappingSearch.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserBreadcrumStatusDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserDocumentDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserListForDepartmentTagging.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserPersonalVerificationDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserProfilePictureDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserRoleMappingSearch.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertAdminUser.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertBankVerificationDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertBannerDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertBenefitsDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertBUDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertErrorDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertPanDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertResetPasswordVerificationLinkDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertReUplaodDocument.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertRoleModulePermissionMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUploadProfilePicture.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUser.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUserandRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUserCategory.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUserDocumentDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUserEmailVerificationLinkDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUserInquiryDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUserOTPDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUserRole.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUserRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_Logout.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_ResetDatabaseAccount.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_ResetPassword.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_UpdateBenefitsDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_UpdateBUDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_UpdateRoleModulePermissionMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_UpdateUserAddressDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_UpdateUserandRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_UpdateUserBankDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_UpdateUserEmailIdDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_UpdateUserPersonalDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_ValidateUser.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_VerfyUserEmail.sql" />
+    <Build Include="dbo\Stored Procedures\POSP_GetPOSPMessageDetail.sql" />
+    <Build Include="dbo\Stored Procedures\POSP_InsertErrorDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetPOSPDetailsForBrokerCreation.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertIMID.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_Job_GetICICIPOSPOnboardDetails.sql" />
+    <Build Include="dbo\Tables\Identity_UserInsurerCompanyOfInterest.sql" />
+    <Build Include="dbo\Tables\Identity_UserInsuranceProductsOfInterest.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertPOSP.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetSourcedByUserList.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetICICIPOSPDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetAllRelationshipManager.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetActiveStatus.sql" />
+    <Build Include="dbo\Stored Procedures\GetNewAndActivePOSPDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_UpdatePersonalDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_SendEmailForAssistedPOSP.sql" />
+    <Build Include="dbo\Functions\Func_GetUsersOfBU.sql" />
+    <Build Include="dbo\Functions\Func_GetUsersByHierarchy.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_ValidateUserPasswordFromUserLink.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_ValidateAdminLogin.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_UpdateAdminUserPassword.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_ResetPasswordAdmin.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_InsertUserWithRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetUserIdForDataVisibility.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetAdminPasswordByUserId.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_GetCardDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_SoftDeleteUserAccount.sql" />
+    <Build Include="dbo\Stored Procedures\Identity_ResetPasswordAdminSendCredentials.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_ResetDatabaseAccountByUserId.sql" />
+  </ItemGroup>
+</Project>

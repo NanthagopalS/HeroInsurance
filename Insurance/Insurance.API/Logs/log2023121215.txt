@@ -1,0 +1,88 @@
+2023-12-12 15:06:56.640 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-12 15:06:56.976 +05:30 [INF] Now listening on: https://localhost:7217
+2023-12-12 15:06:56.978 +05:30 [INF] Now listening on: http://localhost:5217
+2023-12-12 15:06:56.982 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-12 15:06:56.984 +05:30 [INF] Hosting environment: Development
+2023-12-12 15:06:56.985 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\
+2023-12-12 15:07:02.919 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/swagger/index.html - -
+2023-12-12 15:07:03.558 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/swagger/index.html - - - 200 - text/html;charset=utf-8 637.9044ms
+2023-12-12 15:07:03.570 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/_vs/browserLink - -
+2023-12-12 15:07:03.570 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/_framework/aspnetcore-browser-refresh.js - -
+2023-12-12 15:07:03.587 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 16.7617ms
+2023-12-12 15:07:03.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.7523ms
+2023-12-12 15:07:03.712 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/swagger/v1/swagger.json - -
+2023-12-12 15:07:04.549 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 837.1417ms
+2023-12-12 15:07:55.858 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/api/v1/Quote/GetProposalSummary/FD3677E5-7938-46C8-9CD2-FAE188A1782C/MH01/70A2BEBF-9DD3-467C-AB5A-D5E96567021E/8F14BD76-4D32-4BCF-A5BE-A14C20EB99A8 - -
+2023-12-12 15:07:56.950 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10214: Audience validation failed. Audiences: 'System.String'. Did not match: validationParameters.ValidAudience: 'System.String' or validationParameters.ValidAudiences: 'System.String'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-12-12 15:07:56.997 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10214: Audience validation failed. Audiences: 'System.String'. Did not match: validationParameters.ValidAudience: 'System.String' or validationParameters.ValidAudiences: 'System.String'.
+2023-12-12 15:07:57.009 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-12 15:07:57.033 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-12 15:07:57.037 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/api/v1/Quote/GetProposalSummary/FD3677E5-7938-46C8-9CD2-FAE188A1782C/MH01/70A2BEBF-9DD3-467C-AB5A-D5E96567021E/8F14BD76-4D32-4BCF-A5BE-A14C20EB99A8 - - - 401 - application/problem+json 1179.0180ms
+2023-12-12 15:08:19.203 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/api/v1/Quote/GetProposalSummary/FD3677E5-7938-46C8-9CD2-FAE188A1782C/MH01/70A2BEBF-9DD3-467C-AB5A-D5E96567021E/8F14BD76-4D32-4BCF-A5BE-A14C20EB99A8 - -
+2023-12-12 15:08:19.218 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10214: Audience validation failed. Audiences: 'System.String'. Did not match: validationParameters.ValidAudience: 'System.String' or validationParameters.ValidAudiences: 'System.String'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-12-12 15:08:19.223 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10214: Audience validation failed. Audiences: 'System.String'. Did not match: validationParameters.ValidAudience: 'System.String' or validationParameters.ValidAudiences: 'System.String'.
+2023-12-12 15:08:19.235 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-12 15:08:19.237 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-12 15:08:19.239 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/api/v1/Quote/GetProposalSummary/FD3677E5-7938-46C8-9CD2-FAE188A1782C/MH01/70A2BEBF-9DD3-467C-AB5A-D5E96567021E/8F14BD76-4D32-4BCF-A5BE-A14C20EB99A8 - - - 401 - application/problem+json 36.0555ms
+2023-12-12 15:09:19.347 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/api/v1/Quote/GetProposalSummary/FD3677E5-7938-46C8-9CD2-FAE188A1782C/MH01/70A2BEBF-9DD3-467C-AB5A-D5E96567021E/8F14BD76-4D32-4BCF-A5BE-A14C20EB99A8 - -
+2023-12-12 15:09:19.367 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10214: Audience validation failed. Audiences: 'System.String'. Did not match: validationParameters.ValidAudience: 'System.String' or validationParameters.ValidAudiences: 'System.String'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-12-12 15:09:19.369 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10214: Audience validation failed. Audiences: 'System.String'. Did not match: validationParameters.ValidAudience: 'System.String' or validationParameters.ValidAudiences: 'System.String'.
+2023-12-12 15:09:19.371 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-12 15:09:19.373 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-12 15:09:19.375 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/api/v1/Quote/GetProposalSummary/FD3677E5-7938-46C8-9CD2-FAE188A1782C/MH01/70A2BEBF-9DD3-467C-AB5A-D5E96567021E/8F14BD76-4D32-4BCF-A5BE-A14C20EB99A8 - - - 401 - application/problem+json 27.4620ms
+2023-12-12 15:10:28.901 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-12 15:10:29.218 +05:30 [INF] Now listening on: https://localhost:7217
+2023-12-12 15:10:29.219 +05:30 [INF] Now listening on: http://localhost:5217
+2023-12-12 15:10:29.224 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-12 15:10:29.226 +05:30 [INF] Hosting environment: Development
+2023-12-12 15:10:29.227 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\
+2023-12-12 15:10:32.033 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/swagger/index.html - -
+2023-12-12 15:10:32.752 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/swagger/index.html - - - 200 - text/html;charset=utf-8 724.7197ms
+2023-12-12 15:10:32.756 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/_vs/browserLink - -
+2023-12-12 15:10:32.756 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/_framework/aspnetcore-browser-refresh.js - -
+2023-12-12 15:10:32.766 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 10.7818ms
+2023-12-12 15:10:32.829 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 73.6883ms
+2023-12-12 15:10:32.882 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/swagger/v1/swagger.json - -
+2023-12-12 15:10:33.651 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 769.3124ms
+2023-12-12 15:10:54.232 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/api/v1/Quote/GetProposalSummary/FD3677E5-7938-46C8-9CD2-FAE188A1782C/MH01/70A2BEBF-9DD3-467C-AB5A-D5E96567021E/8F14BD76-4D32-4BCF-A5BE-A14C20EB99A8 - -
+2023-12-12 15:10:55.335 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10214: Audience validation failed. Audiences: 'System.String'. Did not match: validationParameters.ValidAudience: 'System.String' or validationParameters.ValidAudiences: 'System.String'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-12-12 15:10:55.381 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10214: Audience validation failed. Audiences: 'System.String'. Did not match: validationParameters.ValidAudience: 'System.String' or validationParameters.ValidAudiences: 'System.String'.
+2023-12-12 15:10:55.392 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-12 15:10:55.409 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-12 15:10:55.413 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/api/v1/Quote/GetProposalSummary/FD3677E5-7938-46C8-9CD2-FAE188A1782C/MH01/70A2BEBF-9DD3-467C-AB5A-D5E96567021E/8F14BD76-4D32-4BCF-A5BE-A14C20EB99A8 - - - 401 - application/problem+json 1181.5263ms
+2023-12-12 15:11:29.006 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7217/api/v1/Quote/GetProposalSummary/FD3677E5-7938-46C8-9CD2-FAE188A1782C/MH01/70A2BEBF-9DD3-467C-AB5A-D5E96567021E/8F14BD76-4D32-4BCF-A5BE-A14C20EB99A8 - -
+2023-12-12 15:11:29.045 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10214: Audience validation failed. Audiences: 'System.String'. Did not match: validationParameters.ValidAudience: 'System.String' or validationParameters.ValidAudiences: 'System.String'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-12-12 15:11:29.047 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10214: Audience validation failed. Audiences: 'System.String'. Did not match: validationParameters.ValidAudience: 'System.String' or validationParameters.ValidAudiences: 'System.String'.
+2023-12-12 15:11:29.049 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-12 15:11:29.051 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-12 15:11:29.052 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7217/api/v1/Quote/GetProposalSummary/FD3677E5-7938-46C8-9CD2-FAE188A1782C/MH01/70A2BEBF-9DD3-467C-AB5A-D5E96567021E/8F14BD76-4D32-4BCF-A5BE-A14C20EB99A8 - - - 401 - application/problem+json 46.0853ms

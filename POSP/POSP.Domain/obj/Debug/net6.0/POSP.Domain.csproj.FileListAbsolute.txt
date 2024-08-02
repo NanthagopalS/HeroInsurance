@@ -1,0 +1,12 @@
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\bin\Debug\net6.0\POSP.Domain.deps.json
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\bin\Debug\net6.0\POSP.Domain.dll
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\bin\Debug\net6.0\POSP.Domain.pdb
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\obj\Debug\net6.0\POSP.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\obj\Debug\net6.0\POSP.Domain.AssemblyInfoInputs.cache
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\obj\Debug\net6.0\POSP.Domain.AssemblyInfo.cs
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\obj\Debug\net6.0\POSP.Domain.csproj.CoreCompileInputs.cache
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\obj\Debug\net6.0\POSP.Domain.sourcelink.json
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\obj\Debug\net6.0\POSP.Domain.dll
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\obj\Debug\net6.0\refint\POSP.Domain.dll
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\obj\Debug\net6.0\POSP.Domain.pdb
+C:\Hero_Insurance\HeroInsurance\POSP\POSP.Domain\obj\Debug\net6.0\ref\POSP.Domain.dll

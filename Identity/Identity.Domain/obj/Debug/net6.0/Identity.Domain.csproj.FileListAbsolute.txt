@@ -1,0 +1,17 @@
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\bin\Debug\net6.0\FirebaseServiceAccount.json
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\bin\Debug\net6.0\Identity.Domain.deps.json
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\bin\Debug\net6.0\Identity.Domain.dll
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\bin\Debug\net6.0\Identity.Domain.pdb
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\bin\Debug\net6.0\ThirdPartyUtilities.dll
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\bin\Debug\net6.0\ThirdPartyUtilities.pdb
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.csproj.AssemblyReference.cache
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.AssemblyInfoInputs.cache
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.AssemblyInfo.cs
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.csproj.CoreCompileInputs.cache
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.sourcelink.json
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.csproj.CopyComplete
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.dll
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\refint\Identity.Domain.dll
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\Identity.Domain.pdb
+C:\Hero_Insurance\HeroInsurance\Identity\Identity.Domain\obj\Debug\net6.0\ref\Identity.Domain.dll

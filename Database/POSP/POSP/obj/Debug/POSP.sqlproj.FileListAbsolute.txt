@@ -1,0 +1,10 @@
+C:\Hero_Insurance\HeroInsurance\Database\POSP\POSP\bin\Debug\POSP.dacpac
+C:\Hero_Insurance\HeroInsurance\Database\POSP\POSP\bin\Debug\POSP.dll
+C:\Hero_Insurance\HeroInsurance\Database\POSP\POSP\bin\Debug\POSP.pdb
+C:\Hero_Insurance\HeroInsurance\Database\POSP\POSP\obj\Debug\POSP.sqlproj.AssemblyReference.cache
+C:\Hero_Insurance\HeroInsurance\Database\POSP\POSP\obj\Debug\Model.xml
+C:\Hero_Insurance\HeroInsurance\Database\POSP\POSP\obj\Debug\refactor.xml
+C:\Hero_Insurance\HeroInsurance\Database\POSP\POSP\obj\Debug\postdeploy.sql
+C:\Hero_Insurance\HeroInsurance\Database\POSP\POSP\obj\Debug\predeploy.sql
+C:\Hero_Insurance\HeroInsurance\Database\POSP\POSP\obj\Debug\POSP.dll
+C:\Hero_Insurance\HeroInsurance\Database\POSP\POSP\obj\Debug\POSP.pdb

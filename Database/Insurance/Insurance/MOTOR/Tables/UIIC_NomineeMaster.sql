@@ -1,0 +1,6 @@
+﻿CREATE TABLE [MOTOR].[UIIC_NomineeMaster] (
+    [S No]          NVARCHAR (255) NULL,
+    [RELATION CODE] NVARCHAR (255) NULL,
+    [RELATION]      NVARCHAR (255) NULL
+);
+

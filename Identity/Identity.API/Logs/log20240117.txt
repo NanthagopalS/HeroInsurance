@@ -1,0 +1,90 @@
+2024-01-17 11:47:59.312 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-17 11:47:59.536 +05:30 [INF] Now listening on: http://localhost:7219
+2024-01-17 11:47:59.540 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-17 11:47:59.540 +05:30 [INF] Hosting environment: Development
+2024-01-17 11:47:59.541 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Identity\Identity.API\
+2024-01-17 11:48:03.001 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:7219/swagger/index.html - -
+2024-01-17 11:48:03.438 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 436.9721ms
+2024-01-17 11:48:03.449 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:7219/_vs/browserLink - -
+2024-01-17 11:48:03.458 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2024-01-17 11:48:03.463 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 4.8208ms
+2024-01-17 11:48:03.601 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 151.6538ms
+2024-01-17 11:48:03.646 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:7219/swagger/v1/swagger.json - -
+2024-01-17 11:48:04.150 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 504.3192ms
+2024-01-17 11:48:42.451 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:7219/api/v1/Registration/Login application/json 75
+2024-01-17 11:48:42.482 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-01-17 11:48:42.485 +05:30 [INF] CORS policy execution successful.
+2024-01-17 11:48:42.590 +05:30 [INF] Executing endpoint 'Identity.API.Controllers.v1.RegistrationController.Login (Identity.API)'
+2024-01-17 11:48:42.626 +05:30 [INF] Route matched with {action = "Login", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Identity.Core.Features.Registration.Commands.CreateAdmin.AdminVm]] Login(Identity.Core.Features.Registration.Commands.CreateAdmin.CreateAdminCommand, System.Threading.CancellationToken) on controller Identity.API.Controllers.v1.RegistrationController (Identity.API).
+2024-01-17 11:49:30.027 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-17 11:49:30.224 +05:30 [INF] Now listening on: http://localhost:7219
+2024-01-17 11:49:30.229 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-17 11:49:30.230 +05:30 [INF] Hosting environment: Development
+2024-01-17 11:49:30.231 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Identity\Identity.API\
+2024-01-17 11:49:32.867 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:7219/swagger/index.html - -
+2024-01-17 11:49:33.364 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:7219/swagger/index.html - - - 200 - text/html;charset=utf-8 499.1797ms
+2024-01-17 11:49:33.364 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:7219/_vs/browserLink - -
+2024-01-17 11:49:33.377 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:7219/_framework/aspnetcore-browser-refresh.js - -
+2024-01-17 11:49:33.383 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:7219/_framework/aspnetcore-browser-refresh.js - - - 200 13760 application/javascript;+charset=utf-8 5.3536ms
+2024-01-17 11:49:33.445 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:7219/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.6235ms
+2024-01-17 11:49:33.488 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:7219/swagger/v1/swagger.json - -
+2024-01-17 11:49:33.947 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:7219/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 458.6482ms
+2024-01-17 11:49:52.908 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:7219/api/v1/Registration/Login application/json 75
+2024-01-17 11:49:52.925 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-01-17 11:49:52.927 +05:30 [INF] CORS policy execution successful.
+2024-01-17 11:49:53.462 +05:30 [INF] Executing endpoint 'Identity.API.Controllers.v1.RegistrationController.Login (Identity.API)'
+2024-01-17 11:49:53.502 +05:30 [INF] Route matched with {action = "Login", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Identity.Core.Features.Registration.Commands.CreateAdmin.AdminVm]] Login(Identity.Core.Features.Registration.Commands.CreateAdmin.CreateAdminCommand, System.Threading.CancellationToken) on controller Identity.API.Controllers.v1.RegistrationController (Identity.API).
+2024-01-17 11:50:01.941 +05:30 [INF] Executed action Identity.API.Controllers.v1.RegistrationController.Login (Identity.API) in 8429.7224ms
+2024-01-17 11:50:01.951 +05:30 [INF] Executed endpoint 'Identity.API.Controllers.v1.RegistrationController.Login (Identity.API)'
+2024-01-17 11:50:02.019 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.
+   at System.Convert.FromBase64CharPtr(Char* inputPtr, Int32 inputLength)
+   at System.Convert.FromBase64String(String s)
+   at ThirdPartyUtilities.Helpers.CustomUtility.Base64Decode(String encodedText) in C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\Helpers\CustomUtility.cs:line 60
+   at ThirdPartyUtilities.Helpers.CustomUtility.Base64DecodeForRequest(String encrytedData) in C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\Helpers\CustomUtility.cs:line 70
+   at Identity.Core.Features.Registration.Commands.CreateAdmin.CreateAdminCommandHandler.Handle(CreateAdminCommand logCreationCommand, CancellationToken cancellationToken) in C:\Hero_Insurance\HeroInsurance\Identity\Identity.Core\Features\Registration\Commands\CreateAdmin\CreateAdminCommandHandler.cs:line 51
+   at Identity.Core.Behavior.ValidationBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Hero_Insurance\HeroInsurance\Identity\Identity.Core\Behavior\ValidationBehaviour.cs:line 50
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Identity.API.Controllers.v1.RegistrationController.Login(CreateAdminCommand createAdminCommand, CancellationToken cancellationToken) in C:\Hero_Insurance\HeroInsurance\Identity\Identity.API\Controllers\v1\RegistrationController.cs:line 79
+   at lambda_method7(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c.<<<Main>$>b__0_10>d.MoveNext() in C:\Hero_Insurance\HeroInsurance\Identity\Identity.API\Program.cs:line 153
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2024-01-17 11:50:02.208 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:7219/api/v1/Registration/Login application/json 75 - 500 - application/problem+json 9300.5260ms
+2024-01-17 11:50:12.936 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:7219/api/v1/Registration/Login application/json 75
+2024-01-17 11:50:12.942 +05:30 [INF] CORS policy execution successful.
+2024-01-17 11:50:12.944 +05:30 [INF] Executing endpoint 'Identity.API.Controllers.v1.RegistrationController.Login (Identity.API)'
+2024-01-17 11:50:12.946 +05:30 [INF] Route matched with {action = "Login", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Identity.Core.Features.Registration.Commands.CreateAdmin.AdminVm]] Login(Identity.Core.Features.Registration.Commands.CreateAdmin.CreateAdminCommand, System.Threading.CancellationToken) on controller Identity.API.Controllers.v1.RegistrationController (Identity.API).
+2024-01-17 11:51:02.212 +05:30 [INF] Executing OkObjectResult, writing value of type 'ThirdPartyUtilities.Models.ResultModel'.
+2024-01-17 11:51:02.219 +05:30 [INF] Response captured: {"statusCode":"200","message":"Success","data":{"userId":"45BBA540-07C5-4D4C-BEFF-771AE2FC32B0","emailId":"sujai.k1@mantralabsglobal.com","isUserExists":true,"superRoleId":"86F73277-42F6-44F0-9B1C-EA9ED74E9167","superRoleName":"Back Office","roleId":"E8CEBF77-0139-4F8A-A113-807CD57A9974","roleName":"National Head Central","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0NUJCQTU0MC0wN0M1LTRENEMtQkVGRi03NzFBRTJGQzMyQjAiLCJyIjoiTmF0aW9uYWwgSGVhZCBDZW50cmFsIiwibmJmIjoxNzA1NDcyNDYyLCJleHAiOjE3MDU1NTg4NjIsImlhdCI6MTcwNTQ3MjQ2MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NzEzOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTcxMzgifQ.5neNkwlYaI0JDjNiyzGQvZWeXO_xABCaGl2voTruhO8","message":"Login Successfull","credentialsReseted":false}}
+2024-01-17 11:51:02.621 +05:30 [INF] Executed action Identity.API.Controllers.v1.RegistrationController.Login (Identity.API) in 49660.9576ms
+2024-01-17 11:51:02.625 +05:30 [INF] Executed endpoint 'Identity.API.Controllers.v1.RegistrationController.Login (Identity.API)'
+2024-01-17 11:51:02.631 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:7219/api/v1/Registration/Login application/json 75 - 200 - application/json;+charset=utf-8 49695.3763ms
+2024-01-17 11:54:40.872 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:7219/api/v1/Registration/Login application/json 78
+2024-01-17 11:54:40.911 +05:30 [INF] Executing endpoint 'Identity.API.Controllers.v1.RegistrationController.Login (Identity.API)'
+2024-01-17 11:54:40.918 +05:30 [INF] Route matched with {action = "Login", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Identity.Core.Features.Registration.Commands.CreateAdmin.AdminVm]] Login(Identity.Core.Features.Registration.Commands.CreateAdmin.CreateAdminCommand, System.Threading.CancellationToken) on controller Identity.API.Controllers.v1.RegistrationController (Identity.API).
+2024-01-17 11:54:50.056 +05:30 [INF] Executing OkObjectResult, writing value of type 'ThirdPartyUtilities.Models.ResultModel'.
+2024-01-17 11:54:50.057 +05:30 [INF] Response captured: {"statusCode":"200","message":"Success","data":{"userId":"45BBA540-07C5-4D4C-BEFF-771AE2FC32B0","emailId":"sujai.k1@mantralabsglobal.com","isUserExists":true,"superRoleId":"86F73277-42F6-44F0-9B1C-EA9ED74E9167","superRoleName":"Back Office","roleId":"E8CEBF77-0139-4F8A-A113-807CD57A9974","roleName":"National Head Central","authToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI0NUJCQTU0MC0wN0M1LTRENEMtQkVGRi03NzFBRTJGQzMyQjAiLCJyIjoiTmF0aW9uYWwgSGVhZCBDZW50cmFsIiwibmJmIjoxNzA1NDcyNjkwLCJleHAiOjE3MDU1NTkwOTAsImlhdCI6MTcwNTQ3MjY5MCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1NzEzOCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTcxMzgifQ.EgJNbRSZ3cN4uZtHiDEiuIvp-OYBWPwVoemwrsNJWuE","message":"Login Successfull","credentialsReseted":false}}
+2024-01-17 11:54:50.197 +05:30 [INF] Executed action Identity.API.Controllers.v1.RegistrationController.Login (Identity.API) in 9275.7619ms
+2024-01-17 11:54:50.198 +05:30 [INF] Executed endpoint 'Identity.API.Controllers.v1.RegistrationController.Login (Identity.API)'
+2024-01-17 11:54:50.200 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:7219/api/v1/Registration/Login application/json 78 - 200 - application/json;+charset=utf-8 9327.5512ms

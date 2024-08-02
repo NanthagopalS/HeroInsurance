@@ -1,0 +1,29 @@
+2023-12-19 14:47:11.395 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-19 14:47:11.663 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-19 14:47:11.664 +05:30 [INF] Hosting environment: Development
+2023-12-19 14:47:11.664 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\
+2023-12-19 14:47:11.706 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/index.html - -
+2023-12-19 14:47:12.888 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/index.html - - - 200 - text/html;charset=utf-8 1187.0786ms
+2023-12-19 14:47:12.888 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/_framework/aspnetcore-browser-refresh.js - -
+2023-12-19 14:47:12.904 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 12.9542ms
+2023-12-19 14:47:12.912 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/_vs/browserLink - -
+2023-12-19 14:47:13.738 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 826.6431ms
+2023-12-19 14:47:13.801 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - -
+2023-12-19 14:47:14.658 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 857.3346ms
+2023-12-19 14:57:01.211 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-19 14:57:01.483 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-19 14:57:01.484 +05:30 [INF] Hosting environment: Development
+2023-12-19 14:57:01.484 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\
+2023-12-19 14:57:01.509 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/index.html - -
+2023-12-19 14:57:02.318 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/_framework/aspnetcore-browser-refresh.js - -
+2023-12-19 14:57:02.321 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/index.html - - - 200 - text/html;charset=utf-8 815.8704ms
+2023-12-19 14:57:02.333 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/_vs/browserLink - -
+2023-12-19 14:57:02.334 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 13.6074ms
+2023-12-19 14:57:02.411 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 77.4303ms
+2023-12-19 14:57:02.469 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - -
+2023-12-19 14:57:03.178 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 708.8372ms
+2023-12-19 14:59:54.579 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44347/api/v1/IFFCO/GetQuote application/json 756
+2023-12-19 14:59:54.624 +05:30 [INF] CORS policy execution failed.
+2023-12-19 14:59:54.624 +05:30 [INF] Request origin https://localhost:44347 does not have permission to access the resource.
+2023-12-19 14:59:55.083 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.IFFCOController.GetQuote (Insurance.API)'
+2023-12-19 14:59:55.134 +05:30 [INF] Route matched with {action = "GetQuote", controller = "IFFCO"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Insurance.Domain.GoDigit.QuoteResponseModel]]] GetQuote(Insurance.Core.Features.IFFCO.Queries.GetQuote.GetIFFCOQuery, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.IFFCOController (Insurance.API).

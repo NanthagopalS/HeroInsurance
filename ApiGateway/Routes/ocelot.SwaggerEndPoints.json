@@ -1,0 +1,34 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "Admin",
+      "Config": [
+        {
+          "Name": "Admin API",
+          "Version": "v1",
+          "Url": "http://localhost:7018/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Identity",
+      "Config": [
+        {
+          "Name": "Identity API",
+          "Version": "v1",
+          "Url": "http://localhost:7219/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "POSP",
+      "Config": [
+        {
+          "Name": "POSP API",
+          "Version": "v1",
+          "Url": "http://localhost:7199/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

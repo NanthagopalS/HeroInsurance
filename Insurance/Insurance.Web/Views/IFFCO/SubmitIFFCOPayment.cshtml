@@ -1,0 +1,13 @@
+﻿@model Insurance.Web.Models.IFFCOSubmitPaymentModel
+<html>
+<head>
+</head>
+<body onload="document.forms[0].submit()">
+    <form name="PostForm" method="POST" action="@Model.PaymentURL">
+        <input name="RESPONSE_URL" type="hidden" value="@Model.ReturnURL">
+        <input name="PARTNER_CODE" type="hidden" value="@Model.PartnerCode">
+        <input name="UNIQUE_QUOTEID" type="hidden" value="@Model.UniqId">
+        <input name="XML_DATA" type="hidden" value="@Model.ProposalRequest">
+    </form>
+</body>
+</html>

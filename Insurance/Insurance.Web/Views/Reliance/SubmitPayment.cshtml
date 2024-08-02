@@ -1,0 +1,12 @@
+﻿@model Insurance.Web.Models.ReliancePaymentRequestModel
+<html>
+<head>
+</head>
+<body onload="document.forms[0].submit()">
+    <form name="PostForm"
+          method="POST"
+          action="@Model.Url?ProposalNo=@Model.Trnsno&userID=@Model.UserId&ProposalAmount=@Model.Amt&PaymentType=1&Responseurl=@Model.RedirectionUrl&CKYC=@Model.CKYCNumber&IsDocumentUpload=false&PanNo=@Model.PanNumber&IsForm60=false">
+     </form>
+</body>
+</html>
+

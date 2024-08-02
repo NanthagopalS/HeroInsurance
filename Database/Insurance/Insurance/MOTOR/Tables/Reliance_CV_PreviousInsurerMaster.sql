@@ -1,0 +1,26 @@
+﻿CREATE TABLE [MOTOR].[Reliance_CV_PreviousInsurerMaster] (
+    [InsuranceCompanyID]   FLOAT (53)     NULL,
+    [VendorSAPCode]        FLOAT (53)     NULL,
+    [InsuranceCompanyName] NVARCHAR (255) NULL,
+    [BranchCode]           FLOAT (53)     NULL,
+    [BranchName]           NVARCHAR (255) NULL,
+    [BranchType]           NVARCHAR (255) NULL,
+    [ParentBranchID]       NVARCHAR (255) NULL,
+    [ContactPerson]        NVARCHAR (255) NULL,
+    [EmailID]              NVARCHAR (255) NULL,
+    [Mobile]               FLOAT (53)     NULL,
+    [Phone]                NVARCHAR (255) NULL,
+    [Fax]                  NVARCHAR (255) NULL,
+    [Address]              NVARCHAR (255) NULL,
+    [Pincode]              FLOAT (53)     NULL,
+    [CreatedDate]          DATETIME       NULL,
+    [CreatedBy]            NVARCHAR (255) NULL,
+    [UpdatedDate]          DATETIME       NULL,
+    [UpdatedBy]            NVARCHAR (255) NULL,
+    [DeletedDate]          NVARCHAR (255) NULL,
+    [DeletedBy]            NVARCHAR (255) NULL,
+    [InsuranceCompanyARC]  FLOAT (53)     NULL,
+    [GroupID]              FLOAT (53)     NULL,
+    [InsurerId]            VARCHAR (50)   NULL
+);
+

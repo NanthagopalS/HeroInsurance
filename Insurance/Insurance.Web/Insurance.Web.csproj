@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>ae9f762f-b612-4ac1-8697-7f9ea7814f34</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Controllers\HDFCController.cs~RFed29043.TMP" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.IdentityModel.Abstractions" Version="6.27.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+		<PackageReference Include="Serilog.AspNetCore" Version="6.0.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.10.0" />
+		<PackageReference Include="System.Xml.XmlSerializer" Version="4.3.0" />
+	</ItemGroup>
+
+</Project>

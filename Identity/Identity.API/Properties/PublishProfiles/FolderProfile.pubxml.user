@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Hero-Insurance\code\Hero.Insurance.API\Identity\Identity.API\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2022-12-12T08:24:27.6952353Z;True|2022-12-09T12:47:19.2979193+05:30;True|2022-12-08T20:49:55.0147531+05:30;True|2022-12-06T19:00:06.5533408+05:30;True|2022-12-06T15:50:19.6003216+05:30;False|2022-12-06T15:47:44.5968725+05:30;True|2022-12-06T00:42:26.2954922+05:30;True|2022-12-05T12:45:30.3062679+05:30;True|2022-12-02T18:29:09.7790170+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

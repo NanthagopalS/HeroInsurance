@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Admin</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{e6443ab0-2925-40b4-b88a-c87b0414cb5c}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Admin</RootNamespace>
+    <AssemblyName>Admin</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\User Defined Types\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Admin_NotificationBoradcast.sql" />
+    <Build Include="dbo\Tables\Admin_Module.sql" />
+    <Build Include="dbo\Tables\Admin_Notification.sql" />
+    <Build Include="dbo\Tables\Admin_BULevel.sql" />
+    <Build Include="dbo\Tables\Admin_RoleModulePermissionMapping.sql" />
+    <Build Include="dbo\Tables\Admin_ConcernType.sql" />
+    <Build Include="dbo\Tables\Admin_UserCategory.sql" />
+    <Build Include="dbo\Tables\Admin_ErrorDetail.sql" />
+    <Build Include="dbo\Tables\Admin_UserRoleMapping.sql" />
+    <Build Include="dbo\Tables\Admin_SubConcernType.sql" />
+    <Build Include="dbo\Tables\Admin_RoleLevel.sql" />
+    <Build Include="dbo\Tables\Admin_RoleMaster.sql" />
+    <Build Include="dbo\Tables\Admin_HelpAndSupport.sql" />
+    <Build Include="dbo\Tables\Admin_RoleType.sql" />
+    <Build Include="dbo\Tables\Admin_RequestForEditProfile.sql" />
+    <Build Include="dbo\Tables\Admin_BU.sql" />
+    <Build Include="dbo\Tables\Admin_BannerDetail.sql" />
+    <Build Include="dbo\Tables\Admin_AlertType.sql" />
+    <Build Include="dbo\Tables\Admin_RecipientType.sql" />
+    <Build Include="dbo\Tables\Admin_StampInstruction.sql" />
+    <Build Include="dbo\Tables\Admin_StampData.sql" />
+    <Build Include="dbo\Tables\Admin_DeActivatePOSP.sql" />
+    <Build Include="dbo\Tables\Admin_NotificationEvent.sql" />
+    <Build Include="Security\devhero.sql" />
+    <Build Include="Security\devhero_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAlertType.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAllBUDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAllExamManagementDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertTriggerNotification.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAllHelpAndSupport .sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAllPOSPDetailForIIBDashboard.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAllTrainingManagementDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAllUserRoleMappingDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetBannerDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetBUDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetBUHierarchy.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetCardsDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetConcernType.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetCustomerDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetExamParticularQuestionDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetFileTypeByDocumentId.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetFunnelChart.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetHierarchyManagementDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetIBULevelDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetInActivePOSPDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetInsuranceType.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetLeadManagementDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetLeadOverview.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetLeadStage.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetModuleDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetNotificationByIdAndType.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetNotificationDetailById.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetNotificationList.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetParticularBUDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetParticularHelpAndSupport.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetParticularLeadDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetParticularLeadUploadedDocument.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetParticularPOSPDetailForIIBDashboard.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetParticularRoleDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetParticularRolePermissionDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetParticularUserRoleMappingDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetPoliciesDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetPOSPCountOnboardingDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetPOSPStageDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetProductCategory.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetRecipientList.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetRecipientType.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetRelationshipManager.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetRenewalDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetRoleDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetRoleLevelByBUIdforRoleCreation.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetRoleLevelDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetRoleModulePermission.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetRoleModulePermissionALL.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetRoleTypeDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetSalesOverview.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetStampCountForAgreementManagement.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetSubConcernType.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetTotalSales.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetUserandRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetUserAndRoleMappingSearch.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetUserByBUId.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetUserList.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetUserRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetUserRoleMappingDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetUserRoleMappingSearch.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertBUDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertErrorDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertExamBulkUploadOption.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertExamBulkUploadQuestion.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertLeadDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertNotification .sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertRaiseRequest.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertRequestForEditProfile.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertRoleDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertRoleDetailModulePermissionMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertRoleModulePermissionMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertStampData.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertStampInstruction.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertTariningMaterialDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertUserCategory.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertUserRole.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertUserRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateActivateDeActivateBU.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateActivateDeActivateExamManagement.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateActivateDeActivateRole.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateActivateDeActivateTrainingManagement.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateActivePOSPAccountDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateAgreementStatusByUserId.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateBUDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateBUStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateDocumentStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateExamParticularQuestionDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateParticularPOSPDetailForIIBDashboard.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdatePersonalDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateRoleDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateRoleDetailModulePermissionMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateRoleModulePermissionMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateUserandRoleMapping.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateUserandRoleMappingDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateUserEmailIdDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_PublishNotification.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetTicketManagementDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetTicketManagementDetailById.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateTicketManagementDetailById.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_DeActivateTicketManagementDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_CheckUserExistOrNot.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetPOSPDetailsByIDToDeActivate.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_DeleteExamManagementDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_DeleteHelpAndSupport.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_DeletePoliciesDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_DeleteTrainingManagementDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_InsertDeactivatePospDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_EditNotification .sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAgreementManagementDetail.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdatePushNotificationMasterStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdatePushNotificationBroadcastStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateNotificationViewStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetUserCategory.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetSourcedByUserList.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetPushNotificationById.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetPOSPDetailsByDeactiveTicketId.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetNotificationRecordById.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetBroadcastNotificationDetailById.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAssistedBUDetails.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_DownloadAgreement.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_DeactivatePOSPUserById.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetDeactivatedUser.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAllBUUser.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetSharedWithCentralUser.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAllPOSPStageCount.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_AllPOSPBackOfficePendingReport.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetPOSPManagementDetailList.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_CheckForRole.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAllBUDetailBYUserID.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_ResetDatabaseAccountByUserId.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_UpdateHeroVariantListsForIcId.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetHeroVariantLists.sql" />
+    <Build Include="dbo\User Defined Types\UpdateVariantsMappingTableType.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetIcVariantMappingStatus.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_ResetMvvMappingForIcVariant.sql" />
+    <Build Include="dbo\Stored Procedures\Admin_GetAllVariantForCustomModel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo\Stored Procedures\Admin_GetAllBUDetailBYUserID.sql" />
+  </ItemGroup>
+</Project>

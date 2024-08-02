@@ -1,0 +1,48 @@
+﻿@model Insurance.Web.Models.UnitedIndiaPaymentRequestModel
+@{
+    var src = @Model.HOST + "/merchantpgpui/checkoutjs/merchants/" + @Model.MID + ".js";
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+    <script>
+        function onScriptLoad() {
+            var config = {
+                "root": "",
+                "flow": "DEFAULT",
+                "data": {
+                    "orderId": "@Model.orderId", /* update order id */
+                    "token": "@Model.token", /* update token value */
+                    "tokenType": "TXN_TOKEN",
+                    "amount": "@Model.amount" /* update amount */
+                                            },
+                "handler": {
+                    "notifyMerchant": function (eventName, data) {
+                        console.log("notifyMerchant handler function called");
+                        console.log("eventName => ", eventName);
+                        console.log("data => ", data);
+                    }
+                }
+            };
+            if (window.Paytm && window.Paytm.CheckoutJS) {
+                window.Paytm.CheckoutJS.onLoad(function excecuteAfterCompleteLoad() {
+                    //debugger
+                    // initialze configuration using init method
+                    window.Paytm.CheckoutJS.init(config).then(function onSuccess() {
+                        //debugger
+                        // after successfully updating configuration, invoke JS Checkout
+                        window.Paytm.CheckoutJS.invoke();
+                    }).catch(function onError(error) {
+                        //debugger
+                        console.log("error => ", error);
+                    });
+                });
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <script type="application/javascript" src=@src onload="onScriptLoad();" crossorigin="anonymous"></script>
+</body>
+</html>

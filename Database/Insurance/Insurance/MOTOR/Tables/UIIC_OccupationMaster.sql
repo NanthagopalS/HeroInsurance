@@ -1,0 +1,6 @@
+﻿CREATE TABLE [MOTOR].[UIIC_OccupationMaster] (
+    [S No]            NVARCHAR (255) NULL,
+    [OCCUPATION_ID]   NVARCHAR (255) NULL,
+    [OCCUPATION_DESC] NVARCHAR (255) NULL
+);
+

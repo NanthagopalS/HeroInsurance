@@ -1,0 +1,36 @@
+2023-12-01 10:10:30.704 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-01 10:10:30.918 +05:30 [INF] Now listening on: https://localhost:7092
+2023-12-01 10:10:30.919 +05:30 [INF] Now listening on: http://localhost:5030
+2023-12-01 10:10:30.922 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-01 10:10:30.922 +05:30 [INF] Hosting environment: Development
+2023-12-01 10:10:30.923 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.Web\
+2023-12-01 10:10:35.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/ - -
+2023-12-01 10:10:35.718 +05:30 [INF] Executing endpoint 'Insurance.Web.Controllers.HomeController.Index (Insurance.Web)'
+2023-12-01 10:10:35.749 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Insurance.Web.Controllers.HomeController (Insurance.Web).
+2023-12-01 10:10:35.762 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-01 10:10:35.901 +05:30 [INF] Executed ViewResult - view Index executed in 141.6077ms.
+2023-12-01 10:10:35.908 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/Insurance.Web.styles.css?v=BixXfR6LkyoXkjoxVLIAkwIpzzHEDnQWZluj3I7eenA - -
+2023-12-01 10:10:35.909 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2023-12-01 10:10:35.908 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+2023-12-01 10:10:35.908 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - -
+2023-12-01 10:10:35.908 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/lib/bootstrap/dist/css/bootstrap.min.css - -
+2023-12-01 10:10:35.916 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2023-12-01 10:10:35.917 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/lib/jquery/dist/jquery.min.js - -
+2023-12-01 10:10:35.917 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_vs/browserLink - -
+2023-12-01 10:10:35.918 +05:30 [INF] Executed action Insurance.Web.Controllers.HomeController.Index (Insurance.Web) in 167.3286ms
+2023-12-01 10:10:35.921 +05:30 [INF] Executed endpoint 'Insurance.Web.Controllers.HomeController.Index (Insurance.Web)'
+2023-12-01 10:10:35.927 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 18.3067ms
+2023-12-01 10:10:35.941 +05:30 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2023-12-01 10:10:35.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/ - - - 200 - text/html;+charset=utf-8 439.5300ms
+2023-12-01 10:10:35.947 +05:30 [INF] The file /Insurance.Web.styles.css was not modified
+2023-12-01 10:10:35.949 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 41.1412ms
+2023-12-01 10:10:35.941 +05:30 [INF] The file /css/site.css was not modified
+2023-12-01 10:10:35.941 +05:30 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2023-12-01 10:10:35.947 +05:30 [INF] The file /js/site.js was not modified
+2023-12-01 10:10:35.941 +05:30 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2023-12-01 10:10:35.958 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/Insurance.Web.styles.css?v=BixXfR6LkyoXkjoxVLIAkwIpzzHEDnQWZluj3I7eenA - - - 304 - text/css 50.6856ms
+2023-12-01 10:10:35.961 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 304 - text/css 53.6822ms
+2023-12-01 10:10:35.962 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 54.7145ms
+2023-12-01 10:10:35.963 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 47.3592ms
+2023-12-01 10:10:35.965 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 48.0193ms
+2023-12-01 10:10:36.024 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.8552ms

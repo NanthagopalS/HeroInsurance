@@ -1,0 +1,14 @@
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\bin\Debug\net6.0\FirebaseServiceAccount.json
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\bin\Debug\net6.0\ThirdPartyUtilities.deps.json
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\bin\Debug\net6.0\ThirdPartyUtilities.dll
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\bin\Debug\net6.0\ThirdPartyUtilities.pdb
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\obj\Debug\net6.0\ThirdPartyUtilities.csproj.AssemblyReference.cache
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\obj\Debug\net6.0\ThirdPartyUtilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\obj\Debug\net6.0\ThirdPartyUtilities.AssemblyInfoInputs.cache
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\obj\Debug\net6.0\ThirdPartyUtilities.AssemblyInfo.cs
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\obj\Debug\net6.0\ThirdPartyUtilities.csproj.CoreCompileInputs.cache
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\obj\Debug\net6.0\ThirdPartyUtilities.sourcelink.json
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\obj\Debug\net6.0\ThirdPartyUtilities.dll
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\obj\Debug\net6.0\refint\ThirdPartyUtilities.dll
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\obj\Debug\net6.0\ThirdPartyUtilities.pdb
+C:\Hero_Insurance\HeroInsurance\ThirdPartyIntegration\ThirdPartyUtilities\obj\Debug\net6.0\ref\ThirdPartyUtilities.dll

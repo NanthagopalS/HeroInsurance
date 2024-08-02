@@ -1,0 +1,14 @@
+[
+  {
+    "error_code": "H-1001",
+    "error_key": "Continue",
+    "type": "field level",
+    "error_msg": "Only a part of the request has been received by the server, but as long as it has not been rejected, the client should continue with the request"
+  },
+  {
+    "error_code": "H-1002",
+    "error_key": "Switching Protocols",
+    "type": "field level",
+    "error_msg": "The server switches protocol."
+  }
+]

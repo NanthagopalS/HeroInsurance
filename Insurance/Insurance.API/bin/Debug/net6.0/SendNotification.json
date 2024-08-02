@@ -1,0 +1,72 @@
+{
+  "SMS": [
+    {
+      "Type": "Quote",
+      "Body": "Dear Customer, Click #{Link} to view the Insurance quotations for your #{Make} #{Model} as per the details submitted.\nHIBIPL"
+    },
+    {
+      "Type": "QuoteConfirm",
+      "Body": "Hey Customer, Please complete the proposal to insure your #{Make} #{Model}. Click #{Link} to continue.\nTeam Hero Insurance Broking"
+    },
+    {
+      "Type": "KYC",
+      "Body": "Hey Customer, Please complete the proposal to insure your #{Make} #{Model}. Click #{Link} to continue.\nTeam Hero Insurance Broking"
+    },
+    {
+      "Type": "ProposalSummary",
+      "Body": "Hey Customer, Complete the payment of #{Premium} by clicking #{Link} and insure today!\nTeam Hero Insurance Broking"
+    },
+    {
+      "Type": "Payment",
+      "Body": "Congratulation for insuring your #{Make} #{Model}. Click #{Link} to download your insurance policy.\nTeam Hero Insurance Broking"
+    },
+    {
+      "Type": "RenewalReminder",
+      "Body": "Dear Customer, your insurance policy for Vehicle #{Make} #{Model} #{Variant} is expiring soon! Click #{Link} to renew now.\nTeam Hero Insurance Broking"
+    },
+    {
+      "Type": "BreakInSuccess",
+      "Body": "Congratulations! Inspection for your #{Make} #{Model} is approved. Click #{Link} to make payment to insure now.\nTeam Hero Insurance Broking"
+    },
+    {
+      "Type": "BreakInFailure",
+      "Body": "Hey Customer, Inspection for your #{Make} #{Model} has failed. Ref ID No. - #{BreakinId}. Call Hero Support 18001024376 or contact #{POSPMobile} for further assistance.\nHIBIPL"
+    },
+    {
+      "Type": "BreakInInitiation",
+      "Body": "Insurance inspection for #{Make} #{Model} with has been initiated. Ref ID No. - #{BreakinId}. Follow insurer's instructions to finish the process.\nHIBIPL"
+    }
+  ],
+  "Email": [
+    {
+      "Type": "Quote",
+      "Subject": "Insurance Policy Quotation for Your #{Make} #{Model}",
+      "Body": "Dear #{CustomerName},<br /><br />I hope this email finds you in good health and high spirits. As per your request, we are pleased to share with you the quotation for the insurance policy you were interested in. We have carefully reviewed your requirements and have curated quotes that we believe would best meet your needs.<br /><br />Click <a target=_blank href=#{Link}>Here</a> to view the quotes for your  #{ManufacturingYear} #{Make} #{Model} #{Variant}<br /><br />For any help, You can reach out to us via phone on 1800 102 4376 or email us at support@heroibil.com.<br /><br />We appreciate your interest in our insurance services and look forward to serving you in the future.<br />Thank you for choosing us.<br /><br />Best Regards,<br />Team Hero Insurance Broking"
+    },
+    {
+      "Type": "QuoteConfirm",
+      "Subject": "#{Insurer} Insurance Proposal for insuring your #{Make} #{Model}",
+      "Body": "Dear #{CustomerName},<br /><br />I hope this email finds you in good health and high spirits. As per your request, we are pleased to share with you the proposal form for #{Insurer} to insure your #{ManufacturingYear} #{Make} #{Model} #{Variant}<br /><br />Click <a target=_blank href=#{Link}>Here</a> to view complete the proposal and insure your #{ManufacturingYear} #{Make} #{Model} #{Variant} today!<br /><br />For any help, You can reach out to us via phone on 1800 102 4376 or email us at support@heroibil.com.<br /><br />We appreciate your interest in our insurance services and look forward to serving you in the future.<br />Thank you for choosing us.<br /><br />Best Regards,<br />Team Hero Insurance Broking"
+    },
+    {
+      "Type": "KYC",
+      "Subject": "#{Insurer} Insurance Proposal for insuring your #{Make} #{Model}",
+      "Body": "Dear #{CustomerName},<br /><br />I hope this email finds you in good health and high spirits. As per your request, we are pleased to share with you the proposal form for #{Insurer} to insure your #{ManufacturingYear} #{Make} #{Model} #{Variant}<br /><br />Click <a target=_blank href=#{Link}>Here</a> to view complete the proposal and insure your #{ManufacturingYear} #{Make} #{Model} #{Variant} today!<br /><br />For any help, You can reach out to us via phone on 1800 102 4376 or email us at support@heroibil.com.<br /><br />We appreciate your interest in our insurance services and look forward to serving you in the future.<br />Thank you for choosing us.<br /><br />Best Regards,<br />Team Hero Insurance Broking"
+    },
+    {
+      "Type": "ProposalSummary",
+      "Subject": "Payment Link for your Insurance Policy Purchase",
+      "Body": "Dear #{CustomerName},<br /><br />The payment link for buying the insurance policy has been generated. Click on the link below to proceed: #{Link}<br />We advise you to review the details of the details before proceeding with the payment.<br /><br />If you have any questions or concerns about the payment process, please feel free to contact our customer support team at support@heroibil.com or call us at 1800 102 4376<br /><br />Thankyou you for choosing us for your insurance needs. We look forward to providing you with excellent service.<br /><br />Best Regards,<br />Team Hero Insurance Broking"
+    },
+    {
+      "Type": "Payment",
+      "Subject": "#{Insurer} Insurance Policy Copy | #{CustomerName}",
+      "Body": "Dear #{CustomerName},<br /><br />We’re pleased to have you as our valued customer and congratulations on successfully being insured.<br /><br />This email is to share the insurance policy copy with you. Please find attached a PDF document that includes all the details of your insurance policy.<br /><br />If you’ve any questions or concerns about the policy, please contact us at: support@heroibil.com or call us at 1800 102 4376<br /><br />Best Regards,<br />Team Hero Insurance Broking"
+    },
+    {
+      "Type": "RenewalReminder",
+      "Subject": "#{Insurer} Policy for #{Make} #{Model} Expiring Soon | Renew NOW!",
+      "Body": "Dear #{CustomerName},<br /><br />This is a friendly reminder that your insurance policy #{PolicyNumber} is expiring soon. It's important to keep your policy current to ensure that you're protected against any unforeseen circumstances.<br />You can contact us at 1800 102 4376 and our customer service agent will renew your policy in simple steps.<br /><br />Click <a target=_blank href=#{Link}>Here</a> to view the quotes for your #{ManufacturingYear} #{Make} #{Model} #{Variant} and Insure Now!<br /><br />Thank you for choosing us and we’re looking forward to serving you further.<br /><br />Best Regards,<br />Team Hero Insurance Broking"
+    }
+  ]
+}

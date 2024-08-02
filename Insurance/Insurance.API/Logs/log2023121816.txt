@@ -1,0 +1,26 @@
+2023-12-18 16:56:38.711 +05:30 [INF] User profile is available. Using 'C:\Users\NanthagopalShanmugam\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-18 16:56:39.133 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-18 16:56:39.134 +05:30 [INF] Hosting environment: Development
+2023-12-18 16:56:39.134 +05:30 [INF] Content root path: C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\
+2023-12-18 16:56:39.193 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/index.html - -
+2023-12-18 16:56:40.244 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/index.html - - - 200 - text/html;charset=utf-8 1058.1634ms
+2023-12-18 16:56:40.248 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/_framework/aspnetcore-browser-refresh.js - -
+2023-12-18 16:56:40.286 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/_vs/browserLink - -
+2023-12-18 16:56:40.287 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 21.9601ms
+2023-12-18 16:56:40.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 105.0989ms
+2023-12-18 16:56:40.479 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - -
+2023-12-18 16:56:41.387 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 908.0515ms
+2023-12-18 16:59:27.252 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44347/api/v1/Quote/GetPaymentLink/DC874A12-6667-41AB-A7A1-3BB832B59CEB/B111B64D-583F-46DA-B978-977FE2BC4A16 - -
+2023-12-18 16:59:27.622 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.QuoteController.GetPaymentLink (Insurance.API)'
+2023-12-18 16:59:27.669 +05:30 [INF] Route matched with {action = "GetPaymentLink", controller = "Quote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] GetPaymentLink(System.String, System.String, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.QuoteController (Insurance.API).
+2023-12-18 16:59:30.005 +05:30 [INF] UnitedIndia Initiate Payment {"body":{"requestType":"Payment","mid":"UIICCH46292392135993","websiteName":"WEBSTAGING","orderId":"GR202312180002006128","txnAmount":{"value":"26027","currency":"INR"},"userInfo":{"custId":null,"mobile":"9876545678"},"callbackUrl":"https://localhost:7092/UnitedIndia/SavePaymentStatus/B111B64D-583F-46DA-B978-977FE2BC4A16/C0B202DF-4028-4625-BBB2-21B8832178DD/202312183540550"},"head":{"signature":"4t2rmNFSEwKJzB4z9y8nio5BaUq6nPoZgWHh5xXbwvnkkK+UJclwx3ez+lrnKqLuDH3kSDwSbj1sYAV9onZf5F+t5AP6CiBaP++igS/KqjY="}}
+2023-12-18 16:59:30.598 +05:30 [INF] Start processing HTTP request POST https://securegw-stage.paytm.in/theia/api/v1/initiateTransaction?mid=UIICCH46292392135993&orderId=GR202312180002006128
+2023-12-18 16:59:30.603 +05:30 [INF] Sending HTTP request POST https://securegw-stage.paytm.in/theia/api/v1/initiateTransaction?mid=UIICCH46292392135993&orderId=GR202312180002006128
+2023-12-18 16:59:30.992 +05:30 [INF] Received HTTP response headers after 382.0098ms - 200
+2023-12-18 16:59:31.001 +05:30 [INF] End processing HTTP request after 412.0475ms - 200
+2023-12-18 16:59:31.061 +05:30 [INF] UnitedIndia Initiate Payment {"head":{"responseTimestamp":"1702898971075","version":"v1","clientId":null,"signature":null},"body":{"resultInfo":{"resultStatus":"F","resultCode":"1007","resultMsg":"Missing mandatory element"},"txnToken":null,"isPromoCodeValid":false,"authenticated":false}}
+2023-12-18 16:59:31.422 +05:30 [INF] Executing OkObjectResult, writing value of type 'ThirdPartyUtilities.Models.ResultModel'.
+2023-12-18 16:59:31.437 +05:30 [INF] Response captured: {"statusCode":"200","message":"Success","data":["UIIC GetPaymentLink - UpdateLeadPaymentLink Falied"]}
+2023-12-18 16:59:31.549 +05:30 [INF] Executed action Insurance.API.Controllers.v1.QuoteController.GetPaymentLink (Insurance.API) in 3868.1042ms
+2023-12-18 16:59:31.552 +05:30 [INF] Executed endpoint 'Insurance.API.Controllers.v1.QuoteController.GetPaymentLink (Insurance.API)'
+2023-12-18 16:59:31.579 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44347/api/v1/Quote/GetPaymentLink/DC874A12-6667-41AB-A7A1-3BB832B59CEB/B111B64D-583F-46DA-B978-977FE2BC4A16 - - - 200 - application/json;+charset=utf-8 4327.3276ms

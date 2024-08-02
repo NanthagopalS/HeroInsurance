@@ -1,0 +1,6 @@
+﻿CREATE SEQUENCE [dbo].[SEQ_LeadTransactionId]
+    AS BIGINT
+    INCREMENT BY 1
+    MINVALUE 100000
+    MAXVALUE 999999;
+

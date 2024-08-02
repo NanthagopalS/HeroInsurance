@@ -1,0 +1,84 @@
+2023-12-14 19:20:56.039 +05:30 [ERR] UnitedIndia Proposal API Update Quote Error Object reference not set to an instance of an object.
+2023-12-14 19:20:57.312 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ThirdPartyUtilities.Models.ResultModel'.
+2023-12-14 19:20:57.314 +05:30 [INF] Response captured: {"statusCode":"400","message":"Failed","data":{"title":"BadRequest","status":400,"detail":" "}}
+2023-12-14 19:20:57.889 +05:30 [INF] Executed action Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API) in 1415144.0621ms
+2023-12-14 19:20:57.891 +05:30 [INF] Executed endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-14 19:20:57.895 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7217/api/v1/Quote/CreateProposal/DC874A12-6667-41AB-A7A1-3BB832B59CEB/1188AEBB-539F-4643-8480-9F8C830E48C2/2d566966-5525-4ed7-bd90-bb39e8418f39/false - 0 - 400 - application/json;+charset=utf-8 1415169.5314ms
+2023-12-14 19:21:00.589 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7217/api/v1/Quote/CreateProposal/DC874A12-6667-41AB-A7A1-3BB832B59CEB/9DF12AEE-D8DD-4F4D-87AD-DBFF00079D15/2d566966-5525-4ed7-bd90-bb39e8418f39/false - 0
+2023-12-14 19:21:00.590 +05:30 [INF] CORS policy execution successful.
+2023-12-14 19:21:00.593 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-14 19:21:00.595 +05:30 [INF] Route matched with {action = "CreateProposal", controller = "Quote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Insurance.Domain.GoDigit.QuoteResponseModel]] CreateProposal(System.String, System.String, System.String, Boolean, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.QuoteController (Insurance.API).
+2023-12-14 19:21:06.219 +05:30 [INF] Executed action Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API) in 5609.1703ms
+2023-12-14 19:21:06.223 +05:30 [INF] Executed endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-14 19:21:06.388 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Insurance.Core.Features.UnitedIndia.Command.CreateProposal.UIICCreateProposalCommandHandler.Handle(UIICCreateProposalCommand request, CancellationToken cancellationToken) in C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.Core\Features\UnitedIndia\Command\CreateProposal\UIICCreateProposalCommand.cs:line 41
+   at Insurance.Core.Behavior.ValidationBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.Core\Behavior\ValidationBehaviour.cs:line 50
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Insurance.API.Controllers.v1.QuoteController.CreateProposal(String insurerid, String quotetransactionid, String vehicletypeid, Boolean isSharePaymentLink, CancellationToken cancellationToken) in C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\Controllers\v1\QuoteController.cs:line 520
+   at lambda_method11(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\Program.cs:line 148
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-12-14 19:21:06.462 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7217/api/v1/Quote/CreateProposal/DC874A12-6667-41AB-A7A1-3BB832B59CEB/9DF12AEE-D8DD-4F4D-87AD-DBFF00079D15/2d566966-5525-4ed7-bd90-bb39e8418f39/false - 0 - 500 - application/problem+json 5873.5730ms
+2023-12-14 19:21:10.549 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7217/api/v1/Quote/CreateProposal/DC874A12-6667-41AB-A7A1-3BB832B59CEB/9DF12AEE-D8DD-4F4D-87AD-DBFF00079D15/2d566966-5525-4ed7-bd90-bb39e8418f39/false - 0
+2023-12-14 19:21:10.551 +05:30 [INF] CORS policy execution successful.
+2023-12-14 19:21:10.552 +05:30 [INF] Executing endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-14 19:21:10.553 +05:30 [INF] Route matched with {action = "CreateProposal", controller = "Quote"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Insurance.Domain.GoDigit.QuoteResponseModel]] CreateProposal(System.String, System.String, System.String, Boolean, System.Threading.CancellationToken) on controller Insurance.API.Controllers.v1.QuoteController (Insurance.API).
+2023-12-14 19:21:15.955 +05:30 [INF] Executed action Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API) in 5399.5232ms
+2023-12-14 19:21:15.958 +05:30 [INF] Executed endpoint 'Insurance.API.Controllers.v1.QuoteController.CreateProposal (Insurance.API)'
+2023-12-14 19:21:16.068 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Insurance.Core.Features.UnitedIndia.Command.CreateProposal.UIICCreateProposalCommandHandler.Handle(UIICCreateProposalCommand request, CancellationToken cancellationToken) in C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.Core\Features\UnitedIndia\Command\CreateProposal\UIICCreateProposalCommand.cs:line 41
+   at Insurance.Core.Behavior.ValidationBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.Core\Behavior\ValidationBehaviour.cs:line 50
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Insurance.API.Controllers.v1.QuoteController.CreateProposal(String insurerid, String quotetransactionid, String vehicletypeid, Boolean isSharePaymentLink, CancellationToken cancellationToken) in C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\Controllers\v1\QuoteController.cs:line 520
+   at lambda_method11(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Hero_Insurance\HeroInsurance\Insurance\Insurance.API\Program.cs:line 148
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-12-14 19:21:16.080 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7217/api/v1/Quote/CreateProposal/DC874A12-6667-41AB-A7A1-3BB832B59CEB/9DF12AEE-D8DD-4F4D-87AD-DBFF00079D15/2d566966-5525-4ed7-bd90-bb39e8418f39/false - 0 - 500 - application/problem+json 5530.7230ms

@@ -1,0 +1,18 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "SwaggerKey": "Identity",
+      "ServiceName": "Identity",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7219
+        }
+      ],
+      "UpstreamPathTemplate": "/Identity/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    }
+  ]
+}
